@@ -1,0 +1,142 @@
+:root {
+  --white-color: #ffffff;
+  --accent-color: #ff6c00;
+  --dark-theme-color: #9da4bd99;
+  --light-theme-color: #303030;
+  --text-description-color: #555555;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+/*================== COMPONENTS ==================*/
+.btn-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /* color: var(--white-color); */
+}
+.btn-button:hover,
+.btn-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.hero-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 20%;
+}
+.hero-social-link:hover,
+.hero-social-link:focus {
+  color: var(--accent-color);
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.suptitle-theme-dark {
+  color: var(--dark-theme-color);
+}
+.suptitle-theme-light {
+  color: var(--light-theme-color);
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
+}
+/*================== /COMPONENTS ==================*/
+
+/*================== HEADER ==================*/
+
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 10%;
+
+  /* color: var(--white-color); */
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.phone-number {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 10%;
+
+  /* color: var(--white-color); */
+}
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--accent-color);
+}
+
+.btn-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /* color: var(--white-color); */
+}
+.btn-button:hover,
+.btn-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+/*================== /HEADER ==================*/
+
+/*================== SECTION FOR HERO ==================*/
+
+.hero {
+}
+.hero-left-side {
+}
+.hero-social-list {
+}
+.hero-social-item {
+}
+
+.hero-right-side {
+}
+
+.main-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+
+  /* color: var(--white-color); */
+}
+
+/*================== /SECTION FOR HERO ==================*/
