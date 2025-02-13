@@ -8,15 +8,17 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
     <header class="page-header">
-        <nav class="page-nav">
-            <a class="logo" href>
+        <div class="page-header-container container">
+            <nav class="page-nav">
+                    <a class="logo" href>
                 <img class="logo-img" src="./images/logo.svg" alt="logotype" width="69" height="55">
-            </a>
+                    </a>
             <ul class="menu list">
                 <li class="menu-item">
                     <a class="menu-link link" href>About</a>
@@ -31,13 +33,15 @@
                     <a class="menu-link link" href>Contacts</a>
                 </li>
             </ul>
-        </nav>
-        <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn-button" type="button">Online-booking</button>
+            </nav>
+            <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="btn-button" type="button">Online-booking</button>
+        </div>
+        
     </header>
     <main>
          <!-- SECTION FOR HERO  -->
-        <section class="hero">
+        <section class="hero container">
             <div class="hero-left-side">
               <ul class="hero-social-list list">
                 <li class="hero-social-item">
@@ -55,7 +59,7 @@
             </div>
         </section>
         <!-- SECTION FOR ABOUT US -->
-        <section class="about">
+        <section class="about section container">
             <div class="about-left-images">
                 <ul class="about-list list">
                     <li class="about-item ">
@@ -69,19 +73,20 @@
             </div>
             <div>
                 <p class="suptitle suptitle-theme-light">About</p>
-                <h2>Best Barbershop in your city</h2>
-                <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p>We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master,
+                <h2 class="about-title">Best Barbershop in your city</h2>
+                <p class="about-text">If you want to add more confidence to your image, you should definitely visit us.</p>
+                <p class="about-description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master,
                      you will never be the same again. We are a team that is always "on the same wave" with clients. 
                      Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button type="button">ONLINE-BOOKING</button>
+                <button class="about-btn" type="button">ONLINE-BOOKING</button>
             </div>
         </section>
         <!-- SECTION FOR SERVICES AND PRICES  -->
-        <section>
-            <p class="suptitle suptitle-theme-dark">Spend your time with the best masters</p>
-            <h2>Services and prices</h2>
-            <table>
+        <section class="prices section">
+            <div class="container">
+                <p class="prices-description suptitle suptitle-theme-dark">Spend your time with the best masters</p>
+            <h2 class="prices-title">Services and prices</h2>
+            <table class="prices-table">
                 <tr>
                     <td>Men’s haircut</td>
                     <td>from 300 uah.</td>
@@ -118,94 +123,85 @@
                 </tr>
              </table>
              <button type="button">online-booking</button>
+            </div>
+            
         </section>
         <!-- SECTION WHY PEOPLE COME TO US -->
-        <section>
+        <section class="choose-us section container">
             <div>
-                <ul>
-                    <li>
+                <ul class="choose-us-list">
+                    <li class="choose-us-item">
                         <p>600</p>
                         <p>Satisfied customers per day</p>
                     </li>
-                    <li>
+                    <li class="choose-us-item">
                         <p>50</p>
                         <p>Awards for excellent service</p>
                     </li>
-                    <li>
+                    <li class="choose-us-item">
                         <p>20</p>
                         <p>Kyiv’s best barbers</p>
                     </li>
-                    <li>
+                    <li class="choose-us-item">
                         <p>100</p>
                         <p>customers</p>
                     </li>
                 </ul>
             </div>
             <div>
-                <p class="suptitle suptitle-theme-light">Old traditional school</p>
-                <h2>¿Why people come to us?</h2>
-                <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+                <p class="choose-us-text suptitle suptitle-theme-light">Old traditional school</p>
+                <h2 class="choose-us-title">¿Why people come to us?</h2>
+                <p class="choose-us-description">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
             </div>
         </section>
         <!-- SECTION FOR OUR BARBERS -->
-        <section>
+        <section class="berbers-section section container">
             <p class="suptitle suptitle-theme-light">For true enjoyers of the atmosphere</p>
-            <h2>Our barbers</h2>
-            <ul>
-                <li>
+            <h2 class="barbers-title">Our barbers</h2>
+            <ul class="barbers-item list">
+                <li class="barbers-card">
                     <img src="./images/barbers/john-smith.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                    <h3>John Smith</h3>
-                    <p>Extreme Barber</p>
+                    <h3 class="barbers-name">John Smith</h3>
+                    <p class="barbers-skill">Extreme Barber</p>
                 </li>
                 <li>
                     <img src="./images/barbers/michele-doe.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                    <h3>Michele Doe</h3>
-                    <p>Extreme Barber</p>
+                    <h3 class="barbers-name">Michele Doe</h3>
+                    <p class="barbers-skill">Extreme Barber</p>
                 </li>
                 <li>
                     <img src="./images/barbers/alan-black.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                    <h3>Alan Black</h3>
-                    <p>Extreme Barber</p>
+                    <h3 class="barbers-name">Alan Black</h3>
+                    <p class="barbers-skill">Extreme Barber</p>
                 </li>
             </ul>
         </section>
         <!-- SECTION FOR BARBA MEANS BEARD -->
-        <section>
+        <section class="barba-info section container">
             <p class="suptitle suptitle-theme-light">In Latin, "barba" means "beard"</p>
             <ul>
                 <li>
-                    <img src="/images/barba means beard/leveling.jpg"
-                     alt="leveling"
-                     width="270"
-                     height="360">
+                    <img src="/images/barba means beard/leveling.jpg" alt="leveling" width="270" height="360">
                      
                 </li>
                 <li>
-                    <img src="./images/barba means beard/beard.jpg"
-                     alt="beard"
-                     width="270"
-                     height="360">
+                    <img src="./images/barba means beard/beard.jpg" alt="beard" width="270" height="360">
                      
                 </li>
                 <li>
-                    <img src="./images/barba means beard/barber.jpg"
-                     alt="barber"
-                     width="270"
-                     height="360">
+                    <img src="./images/barba means beard/barber.jpg" alt="barber" width="270" height="360">
                      
                 </li>
                 <li>
-                    <img src="./images/barba means beard/hairstyles.jpg"
-                     alt="hairstyles"
-                     width="270"
-                     height="360">
+                    <img src="./images/barba means beard/hairstyles.jpg" alt="hairstyles" width="270" height="360">
                      
                 </li>
             </ul>
         </section>
         <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
         <section>
-            <h2>Contacts</h2>
+            <div class="container">
+                <h2>Contacts</h2>
             <address>
                 <ul>
                     <li>
@@ -221,6 +217,8 @@
             </address>
             <h3>Working hours</h3>
             <p>Every day from 9:00 to 22:00</p>
+            </div>
+            
         </section>
     </main>
     <footer>
