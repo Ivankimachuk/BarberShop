@@ -66,7 +66,6 @@ body {
   cursor: pointer;
   padding: 11px 20px;
   border: 1px solid #ff6c00;
-  /* border-width: 1px; */
   border-radius: 25px;
 
   /* color: var(--white-color); */
@@ -214,9 +213,193 @@ body {
 
 /*================== /SECTION FOR HERO ==================*/
 
+/*================== SECTION FOR ABOUT US ==================*/
+.about {
+  display: flex;
+}
+
+.about-left-images {
+  margin-right: 30px;
+}
+
+.about-right-text {
+  max-width: 470px;
+  width: 100%;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  margin-bottom: 20px;
+  color: var(--light-theme-color);
+}
+.about-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 2%;
+  margin-bottom: 20px;
+  color: var(--text-description-color);
+}
+.about-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 2%;
+  margin-bottom: 42px;
+  color: var(--text-description-color);
+}
+.about-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 11px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background: transparent;
+}
+.about-btn:hover,
+.about-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+/*================== /SECTION FOR ABOUT US ==================*/
+
+/*================== SECTION FOR SERVICES AND PRICES  ==================*/
+.prices {
+  background-color: #555555;
+}
+.section {
+}
+.container {
+}
+.prices-description {
+}
+.suptitle {
+}
+.suptitle-theme-dark {
+}
+.prices-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  margin-bottom: 44px;
+  color: var(--white-color);
+}
+
+.prices-table-box {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.prices-btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 11px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background: transparent;
+}
+.prices-btn:hover,
+.prices-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/*================== /SECTION FOR SERVICES AND PRICES  ==================*/
+
+/*================== SECTION WHY PEOPLE COME TO US  ==================*/
+.choose-us {
+  display: flex;
+  justify-content: center;
+}
+.section {
+}
+.container {
+}
+.choose-us-list {
+}
+.list {
+}
+.choose-us-item {
+}
+
+.choose-us-numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.27;
+  letter-spacing: 5%;
+  text-align: center;
+  color: var(--light-theme-color);
+}
+
+.choose-us-numbers-text {
+  max-width: 122px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--light-theme-color);
+}
+.choose-us-text-container {
+  max-width: 500px;
+}
+.choose-us-text {
+}
+.suptitle {
+}
+.suptitle-theme-light {
+}
+.choose-us-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  margin-bottom: 20px;
+  color: var(--light-theme-color);
+}
+
+.choose-us-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--text-description-color);
+}
+/*================== /SECTION WHY PEOPLE COME TO US  ==================*/
+
 /*================== SECTION FOR OUR BARBERS ==================*/
 .berbers-section {
   background-color: #f7f7f7;
+}
+
+.barbers-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  color: var(--light-theme-color);
+  margin-bottom: 44px;
 }
 
 .barbers-item {
@@ -229,4 +412,92 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
+.barbers-info-container {
+  margin-top: 30px;
+}
+
+.barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--light-theme-color);
+  margin-bottom: 8px;
+}
+
+.barbers-skill {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
 /*================== /SECTION FOR OUR BARBERS ==================*/
+
+/*================== SECTION FOR BARBA MEANS BEARD  ==================*/
+.barba-info {
+}
+.section {
+}
+.container {
+}
+.suptitle {
+}
+.suptitle-theme-light {
+}
+.barba-info-list {
+  display: flex;
+  gap: 30px;
+}
+.list {
+}
+.barba-info-item {
+}
+/*================== /SECTION FOR BARBA MEANS BEARD  ==================*/
+
+/*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+.booking {
+  background-color: var(--text-description-color);
+}
+.booking-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  color: var(--white-color);
+}
+
+.booking-address{
+  margin-bottom: 70px;
+}
+
+.booking-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
+}
+
+.booking-tel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
+}
+
+.booking-mail{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.66;
+letter-spacing: 2%;
+color: var(--dark-theme-color);
+}
+
+/*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
