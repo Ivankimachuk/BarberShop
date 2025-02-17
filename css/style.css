@@ -194,8 +194,21 @@ body {
 .hero-left-side {
 }
 .hero-social-list {
+  display: flex;
+  gap: 40px;
 }
 .hero-social-item {
+}
+.hero-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+  letter-spacing: 20%;
+  color: var(--light-theme-color);
+}
+.hero-social-link:hover,
+.hero-social-link:focus {
+  color: var(--accent-color);
 }
 
 .hero-right-side {
@@ -316,11 +329,11 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background: transparent;
+  color: var(--white-color);
 }
 .prices-btn:hover,
 .prices-btn:focus {
   background-color: var(--accent-color);
-  color: var(--white-color);
 }
 
 /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
@@ -443,19 +456,14 @@ body {
 }
 .section {
 }
-.container {
-}
-.suptitle {
-}
 .suptitle-theme-light {
 }
 .barba-info-list {
   display: flex;
   gap: 30px;
 }
-.list {
-}
 .barba-info-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 /*================== /SECTION FOR BARBA MEANS BEARD  ==================*/
 
@@ -472,8 +480,9 @@ body {
   color: var(--white-color);
 }
 
-.booking-address{
+.booking-address {
   margin-bottom: 70px;
+  max-width: 270px;
 }
 
 .booking-link {
@@ -482,6 +491,7 @@ body {
   line-height: 30px;
   letter-spacing: 2%;
   color: var(--dark-theme-color);
+  font-style: normal;
 }
 
 .booking-tel {
@@ -490,14 +500,24 @@ body {
   line-height: 1.66;
   letter-spacing: 2%;
   color: var(--dark-theme-color);
+  font-style: normal;
 }
 
-.booking-mail{
-font-weight: 400;
-font-size: 18px;
-line-height: 1.66;
-letter-spacing: 2%;
-color: var(--dark-theme-color);
+.booking-mail {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
+  font-style: normal;
+}
+
+.booking-time-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
 }
 
 /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
