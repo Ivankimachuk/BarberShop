@@ -212,6 +212,13 @@ body {
 }
 
 .hero-right-side {
+  padding-top: 272px;
+  padding-bottom: 306px;
+  padding-left: 100px;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../images/hero/bg.jpg);
+  background-size: cover;
 }
 
 .main-title {
@@ -220,8 +227,12 @@ body {
   font-size: 72px;
   line-height: 1.16;
   letter-spacing: 5%;
+  color: var(--white-color);
+  padding-bottom: 20px;
+}
 
-  /* color: var(--white-color); */
+.hero-text {
+  max-width: 360px;
 }
 
 /*================== /SECTION FOR HERO ==================*/
