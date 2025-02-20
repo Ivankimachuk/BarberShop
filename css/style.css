@@ -4,6 +4,7 @@
   --dark-theme-color: #9da4bd99;
   --light-theme-color: #303030;
   --text-description-color: #555555;
+  --gray-shade-elements: #f7f7f7;
 }
 
 p,
@@ -53,7 +54,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /*================== COMPONENTS ==================*/
@@ -88,6 +89,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -95,11 +98,22 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.suptitle::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #ff6c00;
+  margin-right: 20px;
+  content: '';
+}
 .suptitle-theme-dark {
   color: var(--dark-theme-color);
 }
-.suptitle-theme-light {
-  color: var(--light-theme-color);
+.suptitle-theme-dark::before {
+  background-color: var(--dark-theme-color);
+}
+.suptitle-theme-light::before {
+  background-color: var(--light-theme-color);
 }
 
 .section-description {
@@ -195,8 +209,17 @@ body {
 }
 .hero-social-list {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
+.hero-social-list::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--light-theme-color);
+  content: '';
+}
+
 .hero-social-item {
 }
 .hero-social-link {
@@ -216,9 +239,10 @@ body {
   padding-bottom: 306px;
   padding-left: 100px;
   flex-grow: 1;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url(../images/hero/bg.jpg);
+  background-image: url(../images/hero/bg.jpg),
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   background-size: cover;
+  background-color: #303030;
 }
 
 .main-title {
@@ -300,8 +324,12 @@ body {
 
 /*================== SECTION FOR SERVICES AND PRICES  ==================*/
 .prices {
-  background-color: #555555;
+  background-image: url(../images/services/services.jpg),
+    linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+  background-size: cover;
+  background-color: #303030;
 }
+
 .section {
 }
 .container {
@@ -324,7 +352,37 @@ body {
 
 .prices-table-box {
   display: flex;
+  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 40px;
+}
+
+.prices-table-left {
+  padding: 30px 20px;
+  width: 570px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-table-right {
+  padding: 30px 20px;
+  width: 570px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-table-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--dark-theme-color);
+}
+
+.prices-table-line {
+  display: flex;
+  justify-content: space-between;
+}
+.prices-table-line:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .prices-btn {
@@ -363,6 +421,9 @@ body {
 .list {
 }
 .choose-us-item {
+  margin-top: 20px;
+  background-color: var(--gray-shade-elements);
+  padding: 20px;
 }
 
 .choose-us-numbers {
@@ -385,6 +446,7 @@ body {
 }
 .choose-us-text-container {
   max-width: 500px;
+  margin-left: 130px;
 }
 .choose-us-text {
 }
@@ -413,7 +475,7 @@ body {
 
 /*================== SECTION FOR OUR BARBERS ==================*/
 .berbers-section {
-  background-color: #f7f7f7;
+  background-color: var(--gray-shade-elements);
 }
 
 .barbers-title {
@@ -458,6 +520,34 @@ body {
   text-align: center;
   color: var(--accent-color);
   margin-bottom: 30px;
+}
+
+.barbers-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
+.barbers-social-link:hover,
+.barbers-social-link:focus {
+  background-color: var(--light-theme-color);
+}
+
+.barbers-social-icon {
+  fill: var(--light-theme-color);
+}
+.barbers-social-link:hover .barbers-social-icon,
+.barbers-social-link:focus .barbers-social-icon {
+  fill: var(--accent-color);
 }
 
 /*================== /SECTION FOR OUR BARBERS ==================*/
