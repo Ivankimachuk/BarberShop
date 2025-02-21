@@ -129,6 +129,7 @@ body {
 
 .page-header {
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .page-header-container {
@@ -548,6 +549,31 @@ body {
 .barbers-social-link:hover .barbers-social-icon,
 .barbers-social-link:focus .barbers-social-icon {
   fill: var(--accent-color);
+}
+
+.barbers-overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23, 26, 36, 0.8);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-color);
+  padding: 20px 20px;
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform 300ms linear;
+}
+
+.barbers-card:hover .overlay {
+  transform: translate(0, 0);
 }
 
 /*================== /SECTION FOR OUR BARBERS ==================*/
