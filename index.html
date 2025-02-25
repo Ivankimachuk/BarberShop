@@ -37,7 +37,7 @@
             </ul>
             </nav>
             <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="btn-button" type="button">Online-booking</button>
+            <button class="btn-button" type="button" data-modal-open>Online-booking</button>
         </div>
         
     </header>
@@ -85,7 +85,7 @@
                 <p class="about-description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master,
                      you will never be the same again. We are a team that is always "on the same wave" with clients. 
                      Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button class="about-btn" type="button">ONLINE-BOOKING</button>
+                <button class="about-btn" type="button" data-modal-open>ONLINE-BOOKING</button>
             </div>
         </section>
         <!-- /SECTION FOR ABOUT US -->
@@ -133,7 +133,7 @@
                     </tr>
                  </table>
             </div>
-             <button class="prices-btn" type="button">online-booking</button>
+             <button class="prices-btn" type="button" data-modal-open>online-booking</button>
             </div>
             
         </section>
@@ -141,7 +141,7 @@
 
         <!-- SECTION WHY PEOPLE COME TO US -->
         <section class="choose-us section container">
-            <div>
+            <div class="choose-us-container">
                 <ul class="choose-us-list list">
                     <li class="choose-us-item">
                         <p class="choose-us-numbers">600</p>
@@ -347,15 +347,17 @@
     </main>
     <footer>
     </footer>
-    <div class="backdrop">
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close-btn" type="button">
+            <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="modal-close-btn-icon" width="18" height="18">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
     </div>
+    <!-- /MODAL WINDOW -->
 <script src="./js/modal.js"></script>
 </body>
 </html>
