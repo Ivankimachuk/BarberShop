@@ -690,6 +690,7 @@ body {
   width: 528px;
   height: 580px;
   background-color: rgba(250, 250, 250);
+  padding: 40px;
 }
 .modal-close-btn {
   position: absolute;
@@ -721,3 +722,29 @@ body {
 }
 
 /*================== /MODAL WINDOW  ==================*/
+
+/*================== MODAL FORM  ==================*/
+.modal-title {
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.modal-form-input {
+  width: 100%;
+  height: 24px;
+}
+.modal-form-message {
+}
+.modal-form-check {
+}
+.modal-form-check-desc {
+}
+.modal-form-submit {
+}
+/*================== /MODAL FORM  ==================*/

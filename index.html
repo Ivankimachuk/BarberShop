@@ -1,367 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
     <!-- HEADER -->
     <header class="page-header">
-        <div class="page-header-container container">
-            <nav class="page-nav">
-                    <a class="logo" href="">
-                        <svg class="logo-img" width="69" height="55">
-                            <use href="./images/sprite.svg#icon-logo"></use>
-                        </svg>
-                    </a>
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link" href>About</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href>Services and prices</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href>Barbers</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href>Contacts</a>
-                </li>
-            </ul>
-            </nav>
-            <a class="phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="btn-button" type="button" data-modal-open>Online-booking</button>
-        </div>
-        
+      <div class="page-header-container container">
+        <nav class="page-nav">
+          <a class="logo" href>
+            <svg class="logo-img" width="69" height="55">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href>About</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href>Services and prices</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href>Barbers</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href>Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="phone-number link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="btn-button" data-modal-open type="button">
+          Online-booking
+        </button>
+      </div>
     </header>
-     <!-- /HEADER -->
+    <!-- /HEADER -->
     <main>
-         <!-- SECTION FOR HERO  -->
-        <section class="hero">
-          <div class="hero-container container">
-                <div class="hero-left-side">
-                  <ul class="hero-social-list list">
-                    <li class="hero-social-item">
-                        <a class="hero-social-link link" href>Instagram</a>
-                    </li>
-                    <li class="hero-social-item">
-                        <a class="hero-social-link link" href>Youtube</a>
-                    </li>
-                  </ul>  
-                </div>
-                <div class="hero-right-side">
-                    <p class="suptitle suptitle-theme-dark">A hair salon for men in Kyiv</p>
-                    <h1 class="main-title">BarberShop</h1>
-                    <p class="hero-text section-description">We are experts in trendy men’s haircuts.<br>We work quickly, carefully and with style.</p>
-                </div>
+      <!-- SECTION FOR HERO  -->
+      <section class="hero">
+        <div class="hero-container container">
+          <div class="hero-left-side">
+            <ul class="hero-social-list list">
+              <li class="hero-social-item">
+                <a class="hero-social-link link" href>Instagram</a>
+              </li>
+              <li class="hero-social-item">
+                <a class="hero-social-link link" href>Youtube</a>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!-- /SECTION FOR HERO  -->
-
-        <!-- SECTION FOR ABOUT US -->
-        <section class="about section container">
-            <div class="about-left-images">
-                <ul class="about-list list">
-                    <li class="about-item ">
-                        <img class="about-img" src="./images/about/img-about.jpg" alt="working with a beard" width="275" height="445">
-                    </li>
-                    <li class="about-item ">
-                        <img class="about-img" src="./images/about/img-about2.jpg" alt="working with men's hairstyles." width="275" height="445">
-                    </li>
-                </ul>
-
-            </div>
-            <div class="about-right-text">
-                <p class="suptitle suptitle-theme-light">About</p>
-                <h2 class="about-title">Best Barbershop in your city</h2>
-                <p class="about-text">If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p class="about-description">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master,
-                     you will never be the same again. We are a team that is always "on the same wave" with clients. 
-                     Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button class="about-btn" type="button" data-modal-open>ONLINE-BOOKING</button>
-            </div>
-        </section>
-        <!-- /SECTION FOR ABOUT US -->
-
-        <!-- SECTION FOR SERVICES AND PRICES  -->
-        <section class="prices section">
-            <div class="container">
-                <p class="prices-description suptitle suptitle-theme-dark">Spend your time with the best masters</p>
-            <h2 class="prices-title">Services and prices</h2>
-            <div class="prices-table-box">
-                <table class="prices-table-left">
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Men’s haircut</td>
-                        <td class="prices-table-text">from 300 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Beard trim</td>
-                        <td class="prices-table-text">from 300 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Mustache trim</td>
-                        <td class="prices-table-text">from 200 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Straight razor shave</td>
-                        <td class="prices-table-text">from 200 uah.</td>
-                    </tr>
-                </table>
-                 <table class="prices-table-right">
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Trainee’s haircut</td>
-                        <td class="prices-table-text">from 50 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Haircut under the nozzle</td>
-                        <td class="prices-table-text">from 200 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Children’s haircut (0-12 y.o.)</td>
-                        <td class="prices-table-text">from 300 uah.</td>
-                    </tr>
-                    <tr class="prices-table-line">
-                        <td class="prices-table-text">Camouflage of gray hair</td>
-                        <td class="prices-table-text">from 200 uah.</td>
-                    </tr>
-                 </table>
-            </div>
-             <button class="prices-btn" type="button" data-modal-open>online-booking</button>
-            </div>
-            
-        </section>
-        <!-- /SECTION FOR SERVICES AND PRICES  -->
-
-        <!-- SECTION WHY PEOPLE COME TO US -->
-        <section class="choose-us section container">
-            <div class="choose-us-container">
-                <ul class="choose-us-list list">
-                    <li class="choose-us-item">
-                        <p class="choose-us-numbers">600</p>
-                        <p class="choose-us-numbers-text">Satisfied customers per day</p>
-                    </li>
-                    <li class="choose-us-item">
-                        <p class="choose-us-numbers">50</p>
-                        <p class="choose-us-numbers-text">Awards for excellent service</p>
-                    </li>
-                    <li class="choose-us-item">
-                        <p class="choose-us-numbers">20</p>
-                        <p class="choose-us-numbers-text">Kyiv’s best barbers</p>
-                    </li>
-                    <li class="choose-us-item">
-                        <p class="choose-us-numbers">100</p>
-                        <p class="choose-us-numbers-text">Gifts for regular customers</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="choose-us-text-container">
-                <p class="choose-us-text suptitle suptitle-theme-light">Old traditional school</p>
-                <h2 class="choose-us-title">¿Why people come to us?</h2>
-                <p class="choose-us-description">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
-            </div>
-        </section>
-        <!-- /SECTION WHY PEOPLE COME TO US -->
-
-        <!-- SECTION FOR OUR BARBERS -->
-        <section class="berbers-section section container">
-            <p class="suptitle suptitle-theme-light">For true enjoyers of the atmosphere</p>
-            <h2 class="barbers-title">Our barbers</h2>
-            <ul class="barbers-item list">
-                <li class="barbers-card">
-                    <div class="barbers-overlay-wrapper">
-                        <img src="./images/barbers/john-smith.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                        <p class="overlay">John Smith. Experience: 10 years.
-                        <br>John is a true master of men's haircuts and shaving. He specializes in classic and modern hairstyles, knows all the intricacies of fade techniques. His clients return again and again for a flawless haircut and a pleasant conversation.</p>
-                    </div>
-                    <div class="barbers-info-container">
-                        <h3 class="barbers-name">John Smith</h3>
-                        <p class="barbers-skill">Extreme Barber</p>
-                        <ul class="barbers-social-list list">
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </li>
-                <li class="barbers-card">
-                   <div class="barbers-overlay-wrapper">
-                        <img src="./images/barbers/michele-doe.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                        <p class="overlay">Michele Doe. Experience: 7 years.
-                        <br>Michele is an expert in creating stylish looks for men. She perfectly matches the shape of the haircut to the features of the face, masters the art of beard styling and knows all the latest trends in barbering. Her work is a balance between fashion and the individuality of each client.</p>
-                   </div>
-                    <div class="barbers-info-container">
-                        <h3 class="barbers-name">Michele Doe</h3>
-                        <p class="barbers-skill">Extreme Barber</p>
-                         <ul class="barbers-social-list list">
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="barbers-card">
-                    <div class="barbers-overlay-wrapper">
-                        <img src="./images/barbers/alan-black.jpg" alt="the master cuts the client's hair" width="370" height="346">
-                        <p class="overlay">Alan Black. Experience: 12 years.
-                        <br>Alan is a master with extensive experience in the field of barbering. His signature style is precision in detail and impeccable technique. He specializes in classic British haircuts and traditional shaving with a safety razor. Alan always cares about the comfort of his clients and the perfect result.</p>
-                    </div>
-                   <div class="barbers-info-container">
-                        <h3 class="barbers-name">Alan Black</h3>
-                        <p class="barbers-skill">Extreme Barber</p>
-                         <ul class="barbers-social-list list">
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-social-item">
-                                <a href="" class="barbers-social-link">
-                                    <svg class="barbers-social-icon" width="20" height="20">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                   </div>
-                </li>
-            </ul>
-        </section>
-        <!-- /SECTION FOR OUR BARBERS -->
-
-        <!-- SECTION FOR BARBA MEANS BEARD -->
-        <section class="barba-info section container">
-            <p class="suptitle suptitle-theme-light">In Latin, "barba" means "beard"</p>
-            <ul class="barba-info-list list">
-                <li class="barba-info-item">
-                    <img src="/images/barba means beard/leveling.jpg" alt="leveling" width="270" height="360">
-                </li>
-                <li class="barba-info-item">
-                    <img src="./images/barba means beard/beard.jpg" alt="beard" width="270" height="360">
-                </li>
-                <li class="barba-info-item">
-                    <img src="./images/barba means beard/barber.jpg" alt="barber" width="270" height="360">
-                </li>
-                <li class="barba-info-item">
-                    <img src="./images/barba means beard/hairstyles.jpg" alt="hairstyles" width="270" height="360">
-                </li>
-            </ul>
-        </section>
-        <!-- /SECTION FOR BARBA MEANS BEARD -->
-        
-        <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
-        <section class="booking">
-            <div class="booking-container container">
-                <h2 class="booking-title">Contacts</h2>
-                <address class="booking-address">
-                    <ul class="booking-info list">
-                        <li class="booking-item">
-                            <a class="booking-link link" href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56" target="_blank" rel="noopener noreferrer">st. Vasilkivska, 7A <br>Kyiv, 08132</a>
-                        </li>
-                        <li class="booking-item">
-                            <a class="booking-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-                        </li>
-                        <li class="booking-item">
-                            <a class="booking-mail" href="mailto:barbershop@email.com">barbershop@email.com</a>
-                        </li>
-                    </ul>
-                </address>
-                <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
-                <p class="booking-time-text">Every day from 9:00 to 22:00</p>
-            </div>
-        </section>
-        <!-- /SECTION FOR ONLINE-BOOKING AND CONTACTS -->
-    </main>
-    <footer>
-    </footer>
-    <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="modal-close-btn" type="button" data-modal-close>
-                <svg class="modal-close-btn-icon" width="18" height="18">
-                    <use href="./images/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
+          <div class="hero-right-side">
+            <p class="suptitle suptitle-theme-dark">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-title">BarberShop</h1>
+            <p class="hero-text section-description">
+              We are experts in trendy men’s haircuts.<br />We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
+      </section>
+      <!-- /SECTION FOR HERO  -->
+
+      <!-- SECTION FOR ABOUT US -->
+      <section class="about section container">
+        <div class="about-left-images">
+          <ul class="about-list list">
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/about/img-about.jpg"
+                alt="working with a beard"
+                width="275"
+                height="445"
+              />
+            </li>
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/about/img-about2.jpg"
+                alt="working with men's hairstyles."
+                width="275"
+                height="445"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="about-right-text">
+          <p class="suptitle suptitle-theme-light">About</p>
+          <h2 class="about-title">Best Barbershop in your city</h2>
+          <p class="about-text">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+          <p class="about-description">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button class="about-btn" data-modal-open type="button">
+            ONLINE-BOOKING
+          </button>
+        </div>
+      </section>
+      <!-- /SECTION FOR ABOUT US -->
+
+      <!-- SECTION FOR SERVICES AND PRICES  -->
+      <section class="prices section">
+        <div class="container">
+          <p class="prices-description suptitle suptitle-theme-dark">
+            Spend your time with the best masters
+          </p>
+          <h2 class="prices-title">Services and prices</h2>
+          <div class="prices-table-box">
+            <table class="prices-table-left">
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Men’s haircut</td>
+                <td class="prices-table-text">from 300 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Beard trim</td>
+                <td class="prices-table-text">from 300 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Mustache trim</td>
+                <td class="prices-table-text">from 200 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Straight razor shave</td>
+                <td class="prices-table-text">from 200 uah.</td>
+              </tr>
+            </table>
+            <table class="prices-table-right">
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Trainee’s haircut</td>
+                <td class="prices-table-text">from 50 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Haircut under the nozzle</td>
+                <td class="prices-table-text">from 200 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">
+                  Children’s haircut (0-12 y.o.)
+                </td>
+                <td class="prices-table-text">from 300 uah.</td>
+              </tr>
+              <tr class="prices-table-line">
+                <td class="prices-table-text">Camouflage of gray hair</td>
+                <td class="prices-table-text">from 200 uah.</td>
+              </tr>
+            </table>
+          </div>
+          <button class="prices-btn" data-modal-open type="button">
+            online-booking
+          </button>
+        </div>
+      </section>
+      <!-- /SECTION FOR SERVICES AND PRICES  -->
+
+      <!-- SECTION WHY PEOPLE COME TO US -->
+      <section class="choose-us section container">
+        <div class="choose-us-container">
+          <ul class="choose-us-list list">
+            <li class="choose-us-item">
+              <p class="choose-us-numbers">600</p>
+              <p class="choose-us-numbers-text">Satisfied customers per day</p>
+            </li>
+            <li class="choose-us-item">
+              <p class="choose-us-numbers">50</p>
+              <p class="choose-us-numbers-text">Awards for excellent service</p>
+            </li>
+            <li class="choose-us-item">
+              <p class="choose-us-numbers">20</p>
+              <p class="choose-us-numbers-text">Kyiv’s best barbers</p>
+            </li>
+            <li class="choose-us-item">
+              <p class="choose-us-numbers">100</p>
+              <p class="choose-us-numbers-text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+        <div class="choose-us-text-container">
+          <p class="choose-us-text suptitle suptitle-theme-light">
+            Old traditional school
+          </p>
+          <h2 class="choose-us-title">¿Why people come to us?</h2>
+          <p class="choose-us-description">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
+        </div>
+      </section>
+      <!-- /SECTION WHY PEOPLE COME TO US -->
+
+      <!-- SECTION FOR OUR BARBERS -->
+      <section class="berbers-section section container">
+        <p class="suptitle suptitle-theme-light">
+          For true enjoyers of the atmosphere
+        </p>
+        <h2 class="barbers-title">Our barbers</h2>
+        <ul class="barbers-item list">
+          <li class="barbers-card">
+            <div class="barbers-overlay-wrapper">
+              <img
+                src="./images/barbers/john-smith.jpg"
+                alt="the master cuts the client's hair"
+                width="370"
+                height="346"
+              />
+              <p class="overlay">
+                John Smith. Experience: 10 years. <br />John is a true master of
+                men's haircuts and shaving. He specializes in classic and modern
+                hairstyles, knows all the intricacies of fade techniques. His
+                clients return again and again for a flawless haircut and a
+                pleasant conversation.
+              </p>
+            </div>
+            <div class="barbers-info-container">
+              <h3 class="barbers-name">John Smith</h3>
+              <p class="barbers-skill">Extreme Barber</p>
+              <ul class="barbers-social-list list">
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="barbers-card">
+            <div class="barbers-overlay-wrapper">
+              <img
+                src="./images/barbers/michele-doe.jpg"
+                alt="the master cuts the client's hair"
+                width="370"
+                height="346"
+              />
+              <p class="overlay">
+                Michele Doe. Experience: 7 years. <br />Michele is an expert in
+                creating stylish looks for men. She perfectly matches the shape
+                of the haircut to the features of the face, masters the art of
+                beard styling and knows all the latest trends in barbering. Her
+                work is a balance between fashion and the individuality of each
+                client.
+              </p>
+            </div>
+            <div class="barbers-info-container">
+              <h3 class="barbers-name">Michele Doe</h3>
+              <p class="barbers-skill">Extreme Barber</p>
+              <ul class="barbers-social-list list">
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="barbers-card">
+            <div class="barbers-overlay-wrapper">
+              <img
+                src="./images/barbers/alan-black.jpg"
+                alt="the master cuts the client's hair"
+                width="370"
+                height="346"
+              />
+              <p class="overlay">
+                Alan Black. Experience: 12 years. <br />Alan is a master with
+                extensive experience in the field of barbering. His signature
+                style is precision in detail and impeccable technique. He
+                specializes in classic British haircuts and traditional shaving
+                with a safety razor. Alan always cares about the comfort of his
+                clients and the perfect result.
+              </p>
+            </div>
+            <div class="barbers-info-container">
+              <h3 class="barbers-name">Alan Black</h3>
+              <p class="barbers-skill">Extreme Barber</p>
+              <ul class="barbers-social-list list">
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="barbers-social-item">
+                  <a class="barbers-social-link" href>
+                    <svg class="barbers-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /SECTION FOR OUR BARBERS -->
+
+      <!-- SECTION FOR BARBA MEANS BEARD -->
+      <section class="barba-info section container">
+        <p class="suptitle suptitle-theme-light">
+          In Latin, "barba" means "beard"
+        </p>
+        <ul class="barba-info-list list">
+          <li class="barba-info-item">
+            <img
+              src="/images/barba means beard/leveling.jpg"
+              alt="leveling"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="barba-info-item">
+            <img
+              src="./images/barba means beard/beard.jpg"
+              alt="beard"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="barba-info-item">
+            <img
+              src="./images/barba means beard/barber.jpg"
+              alt="barber"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="barba-info-item">
+            <img
+              src="./images/barba means beard/hairstyles.jpg"
+              alt="hairstyles"
+              width="270"
+              height="360"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- /SECTION FOR BARBA MEANS BEARD -->
+
+      <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
+      <section class="booking">
+        <div class="booking-container container">
+          <h2 class="booking-title">Contacts</h2>
+          <address class="booking-address">
+            <ul class="booking-info list">
+              <li class="booking-item">
+                <a
+                  class="booking-link link"
+                  href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >st. Vasilkivska, 7A <br />Kyiv, 08132</a
+                >
+              </li>
+              <li class="booking-item">
+                <a class="booking-tel link" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="booking-item">
+                <a class="booking-mail" href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
+          <p class="booking-time-text">Every day from 9:00 to 22:00</p>
+        </div>
+      </section>
+      <!-- /SECTION FOR ONLINE-BOOKING AND CONTACTS -->
+    </main>
+    <footer></footer>
+    <!-- MODAL WINDOW -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close type="button">
+          <svg class="modal-close-btn-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Online-booking</h2>
+        <form class="modal-form">
+          <div class="modal-form-input-wrapper">
+              <label>
+                <input
+                  class="modal-form-input"
+                  name="user_name"
+                  type="text"
+                  placeholder="NAME*"
+                  required
+                  pattern="^[a-zA-Zа-яА-Я]+"
+                  minlength="2"
+                />
+              </label>
+              <label>
+                <input
+                  class="modal-form-input"
+                  name="user_phone"
+                  type="tel"
+                  placeholder="PHONE*"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="xxx-xxx-xx-xx"
+                />
+              </label>
+          </div>
+          <label for="message">
+            <textarea
+              class="modal-form-message"
+              name="user_message"
+              placeholder="MESSAGE"
+            ></textarea>
+          </label>
+          <input
+            class="modal-form-check"
+            id="user-policy"
+            name="user_policy"
+            type="checkbox"
+          />
+          <label class="modal-form-check-desc" for="user-policy"
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="modal-form-submit">SEND</button>
+        </form>
+      </div>
     </div>
     <!-- /MODAL WINDOW -->
-<script src="./js/modal.js"></script>
-</body>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
-                    
-                     
-                     
-                     
