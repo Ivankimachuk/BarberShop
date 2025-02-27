@@ -5,6 +5,7 @@
   --light-theme-color: #303030;
   --text-description-color: #555555;
   --gray-shade-elements: #f7f7f7;
+  --purple-color-for-the-booking-section: #191C26;
 }
 
 p,
@@ -689,7 +690,7 @@ body {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 580px;
-  background-color: rgba(250, 250, 250);
+  background-color: var(--purple-color-for-the-booking-section);
   padding: 40px;
 }
 .modal-close-btn {
@@ -731,15 +732,66 @@ body {
   flex-direction: column;
 }
 
-.modal-form-input-wrapper{
+.modal-form-input-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+}
+.modal-form-label-wrap {
+  width: 100%;
+  margin-bottom: 44px;
 }
 .modal-form-input {
   width: 100%;
   height: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #9da4bd99;
+  color: var(--dark-theme-color);
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+  letter-spacing: 10%;
+  transition: border-color 250ms linear;
 }
+.modal-form-input:focus::placeholder {
+  color: var(--white-color);
+}
+.modal-form-input::placeholder {
+  color: var(--dark-theme-color);
+}
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+
 .modal-form-message {
+  width: 100%;
+  height: 76px;
+  outline: none;
+  border: none;
+  resize: none;
+  border-bottom: 1px solid #9da4bd99;
+  background-color: inherit;
+  color: var(--dark-theme-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.27;
+  letter-spacing: 10%;
+  transition: border-color 250ms linear;
+}
+.modal-form-message::placeholder {
+  color: var(--dark-theme-color);
+}
+.modal-form-message:focus {
+  outline: none;
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+.modal-form-message:focus::placeholder {
+  color: var(--white-color);
 }
 .modal-form-check {
 }
