@@ -5,7 +5,7 @@
   --light-theme-color: #303030;
   --text-description-color: #555555;
   --gray-shade-elements: #f7f7f7;
-  --purple-color-for-the-booking-section: #191C26;
+  --purple-color-for-the-booking-section: #191c26;
 }
 
 p,
@@ -702,9 +702,8 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border: none;
   background-color: transparent;
-  border: 1px solid #555555;
   padding: 0;
   transition: border-color 250ms linear;
 }
@@ -714,6 +713,7 @@ body {
 }
 
 .modal-close-btn-icon {
+  fill: var(--white-color);
   transition: fill 250ms linear;
 }
 
