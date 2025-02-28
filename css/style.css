@@ -58,6 +58,17 @@ body {
   outline: 1px solid red;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rest(0 0 0 0);
+  clip-path: inset(100%);
+}
 /*================== COMPONENTS ==================*/
 
 .hero-social-link {
@@ -726,6 +737,13 @@ body {
 
 /*================== MODAL FORM  ==================*/
 .modal-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 5%;
+  color: var(--white-color);
+  margin-bottom: 44px;
 }
 .modal-form {
   display: flex;
@@ -753,13 +771,14 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms linear, color 250ms linear;
 }
 .modal-form-input:focus::placeholder {
   color: var(--white-color);
 }
 .modal-form-input::placeholder {
   color: var(--dark-theme-color);
+  transition: color 250ms linear;
 }
 .modal-form-input:focus {
   outline: none;
@@ -780,10 +799,11 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms linear, color 250ms linear;
 }
 .modal-form-message::placeholder {
   color: var(--dark-theme-color);
+  transition: color 250ms linear;
 }
 .modal-form-message:focus {
   outline: none;
@@ -793,9 +813,22 @@ body {
 .modal-form-message:focus::placeholder {
   color: var(--white-color);
 }
-.modal-form-check {
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: var(--accent-color);
 }
-.modal-form-check-desc {
+
+.modal-form-check-desc::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #9da4bd66;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .modal-form-submit {
 }
