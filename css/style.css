@@ -55,7 +55,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -813,6 +813,18 @@ body {
 .modal-form-message:focus::placeholder {
   color: var(--white-color);
 }
+
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 2%;
+  color: var(--white-color);
+  margin-bottom: 44px;
+}
+
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
   background-image: url(../images/vector.svg);
@@ -829,7 +841,35 @@ body {
   border: 1px solid #9da4bd66;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 10px;
 }
-.modal-form-submit {
+
+.modal-form-policy-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 2%;
+  color: var(--accent-color);
+}
+.modal-form-btn-submit {
+  display: block;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 12px 62px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background: transparent;
+  color: var(--white-color);
+  transition: background-color 250ms linear;
+}
+.modal-form-btn-submit:hover,
+.modal-form-btn-submit:focus {
+  background-color: var(--accent-color);
 }
 /*================== /MODAL FORM  ==================*/
+
