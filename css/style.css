@@ -55,7 +55,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -160,10 +160,13 @@ body {
   letter-spacing: 10%;
   color: var(--white-color);
   transition: color 250ms linear;
+  position: relative;
 }
-
 .menu-link:hover,
 .menu-link:focus {
+  color: var(--accent-color);
+}
+.menu-link.active {
   color: var(--accent-color);
 }
 
@@ -213,11 +216,18 @@ body {
 }
 .hero-left-side {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
 }
 .hero-social-list {
   display: flex;
-  align-items: center;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
+  transform-origin: bottom left;
+  transform: rotate(-90deg) translateY(100%);
+  padding-top: 27px;
+  padding-left: 40px;
 }
 .hero-social-list::before {
   display: block;
@@ -232,9 +242,10 @@ body {
 .hero-social-link {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.27;
-  letter-spacing: 20%;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
   color: var(--light-theme-color);
+  transition: color 250ms linear;
 }
 .hero-social-link:hover,
 .hero-social-link:focus {
@@ -246,8 +257,11 @@ body {
   padding-bottom: 208px;
   padding-left: 100px;
   flex-grow: 1;
-  background-image: url(../images/hero/bg.jpg),
-    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero/bg.jpg);
   background-size: cover;
   background-color: #303030;
 }
@@ -378,6 +392,22 @@ body {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
+.prices-table-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.prices-table-line:not(:last-child) {
+  padding-bottom: 20px;
+}
+.prices-table-line::before {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
 .prices-table-text {
   font-weight: 400;
   font-size: 18px;
@@ -385,13 +415,8 @@ body {
   letter-spacing: 2%;
   color: var(--dark-theme-color);
 }
-
-.prices-table-line {
-  display: flex;
-  justify-content: space-between;
-}
-.prices-table-line:not(:last-child) {
-  padding-bottom: 20px;
+.prices-table-text:first-child {
+  order: -1;
 }
 
 .prices-btn {
@@ -625,7 +650,29 @@ body {
 
 /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 .booking {
-  background-color: var(--text-description-color);
+  display: flex;
+  background-color: var(--purple-color-for-the-booking-section);
+}
+
+
+
+.booking-form-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.booking-address-wrapper {
+  background-image: linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+    url(../images/address-bg/addr-bg.jpeg);
+  padding-top: 130px;
+  padding-left: 105px;
+  padding-bottom: 111px;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
 }
 .booking-title {
   font-family: Raleway, sans-serif;
@@ -844,7 +891,7 @@ body {
   margin-right: 10px;
 }
 
-.modal-form-policy-link{
+.modal-form-policy-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 2.14;
@@ -872,4 +919,3 @@ body {
   background-color: var(--accent-color);
 }
 /*================== /MODAL FORM  ==================*/
-

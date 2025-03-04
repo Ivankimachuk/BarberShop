@@ -30,7 +30,7 @@
           </a>
           <ul class="menu list">
             <li class="menu-item">
-              <a class="menu-link link" href>About</a>
+              <a class="menu-link link active" href>About</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href>Services and prices</a>
@@ -382,6 +382,7 @@
 
       <!-- SECTION FOR BARBA MEANS BEARD -->
       <section class="barba-info section container">
+        <h2 class="visually-hidden">Our works</h2>
         <p class="suptitle suptitle-theme-light">
           In Latin, "barba" means "beard"
         </p>
@@ -424,7 +425,57 @@
 
       <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
       <section class="booking">
-        <div class="booking-container container">
+        <div class="booking-form-wrapper container">
+          <h2 class="modal-title">Online-booking</h2>
+          <form class="modal-form">
+            <div class="modal-form-input-wrapper">
+              <label class="modal-form-label-wrap">
+                <input
+                  class="modal-form-input"
+                  name="user_name"
+                  type="text"
+                  placeholder="NAME*"
+                  required
+                  pattern="^[a-zA-Zа-яА-Я]+"
+                  minlength="2"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="modal-form-label-wrap">
+                <input
+                  class="modal-form-input"
+                  name="user_phone"
+                  type="tel"
+                  placeholder="PHONE*"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="xxx-xxx-xx-xx"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+            <label class="modal-form-label-wrap" for="message">
+              <textarea
+                class="modal-form-message"
+                name="user_message"
+                placeholder="MESSAGE"
+              ></textarea>
+            </label>
+            <input
+              class="modal-form-check visually-hidden"
+              id="user-policy"
+              name="user_policy"
+              type="checkbox"
+            />
+            <label class="modal-form-check-desc" for="user-policy"
+              >I accept the terms and conditions of the&nbsp;
+              <a class="modal-form-policy-link" href="">Privacy Policy</a>
+            </label>
+            <button type="submit" class="modal-form-btn-submit">SEND</button>
+          </form>
+        </div>
+
+        <div class="booking-address-wrapper">
           <h2 class="booking-title">Contacts</h2>
           <address class="booking-address">
             <ul class="booking-info list">
@@ -467,30 +518,30 @@
         <h2 class="modal-title">Online-booking</h2>
         <form class="modal-form">
           <div class="modal-form-input-wrapper">
-              <label class="modal-form-label-wrap">
-                <input
-                  class="modal-form-input"
-                  name="user_name"
-                  type="text"
-                  placeholder="NAME*"
-                  required
-                  pattern="^[a-zA-Zа-яА-Я]+"
-                  minlength="2"
-                  autocomplete="off"
-                />
-              </label>
-              <label class="modal-form-label-wrap">
-                <input
-                  class="modal-form-input"
-                  name="user_phone"
-                  type="tel"
-                  placeholder="PHONE*"
-                  required
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  title="xxx-xxx-xx-xx"
-                  autocomplete="off"
-                />
-              </label>
+            <label class="modal-form-label-wrap">
+              <input
+                class="modal-form-input"
+                name="user_name"
+                type="text"
+                placeholder="NAME*"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+"
+                minlength="2"
+                autocomplete="off"
+              />
+            </label>
+            <label class="modal-form-label-wrap">
+              <input
+                class="modal-form-input"
+                name="user_phone"
+                type="tel"
+                placeholder="PHONE*"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                autocomplete="off"
+              />
+            </label>
           </div>
           <label class="modal-form-label-wrap" for="message">
             <textarea
