@@ -50,12 +50,12 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -632,47 +632,46 @@ body {
 
 /*================== /SECTION FOR OUR BARBERS ==================*/
 
-/*================== SECTION FOR BARBA MEANS BEARD  ==================*/
-.barba-info {
-}
-.section {
-}
-.suptitle-theme-light {
-}
-.barba-info-list {
+/*================== GALLERY  ==================*/
+.gallery-list {
   display: flex;
   gap: 30px;
 }
-.barba-info-item {
+.gallery-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-/*================== /SECTION FOR BARBA MEANS BEARD  ==================*/
+/*================== /GALLERY  ==================*/
 
 /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 .booking {
-  display: flex;
   background-color: var(--purple-color-for-the-booking-section);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.8),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(../images/address-bg/addr-bg.jpeg);
+  background-size: 50% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 111px;
 }
 
-
+.booking-container {
+  display: flex;
+}
 
 .booking-form-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px;
-  box-sizing: border-box;
+  padding-right: 25px;
+  width: 50%;
 }
 
 .booking-address-wrapper {
-  background-image: linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-    url(../images/address-bg/addr-bg.jpeg);
-  padding-top: 130px;
   padding-left: 105px;
-  padding-bottom: 111px;
-  flex-grow: 1;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
+}
+
+.booking-item {
+  margin-bottom: 20px;
 }
 .booking-title {
   font-family: Raleway, sans-serif;
@@ -681,6 +680,7 @@ body {
   line-height: 1.16;
   letter-spacing: 5%;
   color: var(--white-color);
+  margin-bottom: 40px;
 }
 
 .booking-address {
@@ -695,6 +695,7 @@ body {
   letter-spacing: 2%;
   color: var(--dark-theme-color);
   font-style: normal;
+  margin-bottom: 20px;
 }
 
 .booking-tel {

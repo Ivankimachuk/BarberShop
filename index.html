@@ -380,40 +380,40 @@
       </section>
       <!-- /SECTION FOR OUR BARBERS -->
 
-      <!-- SECTION FOR BARBA MEANS BEARD -->
-      <section class="barba-info section container">
-        <h2 class="visually-hidden">Our works</h2>
+      <!-- GALLERY -->
+      <section class="gallery section container">
+        <h2 class="visually-hidden">Gallery of Our Works</h2>
         <p class="suptitle suptitle-theme-light">
           In Latin, "barba" means "beard"
         </p>
-        <ul class="barba-info-list list">
-          <li class="barba-info-item">
+        <ul class="gallery-list list">
+          <li class="gallery-item">
             <img
-              src="/images/barba means beard/leveling.jpg"
+              src="/images/gallery/leveling.jpg"
               alt="leveling"
               width="270"
               height="360"
             />
           </li>
-          <li class="barba-info-item">
+          <li class="gallery-item">
             <img
-              src="./images/barba means beard/beard.jpg"
+              src="./images/gallery//beard.jpg"
               alt="beard"
               width="270"
               height="360"
             />
           </li>
-          <li class="barba-info-item">
+          <li class="gallery-item">
             <img
-              src="./images/barba means beard/barber.jpg"
+              src="./images/gallery//barber.jpg"
               alt="barber"
               width="270"
               height="360"
             />
           </li>
-          <li class="barba-info-item">
+          <li class="gallery-item">
             <img
-              src="./images/barba means beard/hairstyles.jpg"
+              src="./images/gallery//hairstyles.jpg"
               alt="hairstyles"
               width="270"
               height="360"
@@ -421,92 +421,98 @@
           </li>
         </ul>
       </section>
-      <!-- /SECTION FOR BARBA MEANS BEARD -->
+      <!-- /GALLERY -->
 
       <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
       <section class="booking">
-        <div class="booking-form-wrapper container">
-          <h2 class="modal-title">Online-booking</h2>
-          <form class="modal-form">
-            <div class="modal-form-input-wrapper">
-              <label class="modal-form-label-wrap">
-                <input
-                  class="modal-form-input"
-                  name="user_name"
-                  type="text"
-                  placeholder="NAME*"
-                  required
-                  pattern="^[a-zA-Zа-яА-Я]+"
-                  minlength="2"
-                  autocomplete="off"
-                />
+        <div class="booking-container container">
+          <div class="booking-form-wrapper ">
+            <h2 class="modal-title">Online-booking</h2>
+            <form class="modal-form">
+              <div class="modal-form-input-wrapper">
+                <label class="modal-form-label-wrap">
+                  <input
+                    class="modal-form-input"
+                    name="user_name"
+                    type="text"
+                    placeholder="NAME*"
+                    required
+                    pattern="^[a-zA-Zа-яА-Я]+"
+                    minlength="2"
+                    autocomplete="off"
+                  />
+                </label>
+                <label class="modal-form-label-wrap">
+                  <input
+                    class="modal-form-input"
+                    name="user_phone"
+                    type="tel"
+                    placeholder="PHONE*"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="xxx-xxx-xx-xx"
+                    autocomplete="off"
+                  />
+                </label>
+              </div>
+              <label class="modal-form-label-wrap" for="message">
+                <textarea
+                  class="modal-form-message"
+                  name="user_message"
+                  placeholder="MESSAGE"
+                ></textarea>
               </label>
-              <label class="modal-form-label-wrap">
-                <input
-                  class="modal-form-input"
-                  name="user_phone"
-                  type="tel"
-                  placeholder="PHONE*"
-                  required
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  title="xxx-xxx-xx-xx"
-                  autocomplete="off"
-                />
+              <input
+                class="modal-form-check visually-hidden"
+                id="user-policy"
+                name="user_policy"
+                type="checkbox"
+              />
+              <label class="modal-form-check-desc" for="user-policy"
+                >I accept the terms and conditions of the&nbsp;
+                <a class="modal-form-policy-link" href="">Privacy Policy</a>
               </label>
-            </div>
-            <label class="modal-form-label-wrap" for="message">
-              <textarea
-                class="modal-form-message"
-                name="user_message"
-                placeholder="MESSAGE"
-              ></textarea>
-            </label>
-            <input
-              class="modal-form-check visually-hidden"
-              id="user-policy"
-              name="user_policy"
-              type="checkbox"
-            />
-            <label class="modal-form-check-desc" for="user-policy"
-              >I accept the terms and conditions of the&nbsp;
-              <a class="modal-form-policy-link" href="">Privacy Policy</a>
-            </label>
-            <button type="submit" class="modal-form-btn-submit">SEND</button>
-          </form>
-        </div>
-
-        <div class="booking-address-wrapper">
-          <h2 class="booking-title">Contacts</h2>
-          <address class="booking-address">
-            <ul class="booking-info list">
-              <li class="booking-item">
-                <a
-                  class="booking-link link"
-                  href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >st. Vasilkivska, 7A <br />Kyiv, 08132</a
-                >
-              </li>
-              <li class="booking-item">
-                <a class="booking-tel link" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="booking-item">
-                <a class="booking-mail" href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
-          <p class="booking-time-text">Every day from 9:00 to 22:00</p>
+              <button type="submit" class="modal-form-btn-submit">SEND</button>
+            </form>
+          </div>
+  
+          <div class="booking-address-wrapper">
+            <h2 class="booking-title">Contacts</h2>
+            <address class="booking-address">
+              <ul class="booking-info list">
+                <li class="booking-item">
+                  <a
+                    class="booking-link link"
+                    href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >st. Vasilkivska, 7A <br />Kyiv, 08132</a
+                  >
+                </li>
+                <li class="booking-item">
+                  <a class="booking-tel link" href="tel:+380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="booking-item">
+                  <a class="booking-mail" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
+            <p class="booking-time-text">Every day from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
       <!-- /SECTION FOR ONLINE-BOOKING AND CONTACTS -->
     </main>
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy;</p>
+    </footer>
+    <!-- FOOTER -->
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
