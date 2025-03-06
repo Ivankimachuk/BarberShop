@@ -426,13 +426,13 @@
       <!-- SECTION FOR ONLINE-BOOKING AND CONTACTS -->
       <section class="booking">
         <div class="booking-container container">
-          <div class="booking-form-wrapper ">
-            <h2 class="modal-title">Online-booking</h2>
-            <form class="modal-form">
-              <div class="modal-form-input-wrapper">
-                <label class="modal-form-label-wrap">
+          <div class="booking-form-wrapper">
+            <h2 class="booking-form-title">Online-booking</h2>
+            <form class="booking-form">
+              <div class="booking-form-input-wrapper">
+                <label class="booking-form-label-wrap">
                   <input
-                    class="modal-form-input"
+                    class="booking-form-input"
                     name="user_name"
                     type="text"
                     placeholder="NAME*"
@@ -442,9 +442,9 @@
                     autocomplete="off"
                   />
                 </label>
-                <label class="modal-form-label-wrap">
+                <label class="booking-form-label-wrap">
                   <input
-                    class="modal-form-input"
+                    class="booking-form-input"
                     name="user_phone"
                     type="tel"
                     placeholder="PHONE*"
@@ -455,27 +455,29 @@
                   />
                 </label>
               </div>
-              <label class="modal-form-label-wrap" for="message">
+              <label class="booking-form-label-wrap" for="message">
                 <textarea
-                  class="modal-form-message"
+                  class="booking-form-message"
                   name="user_message"
                   placeholder="MESSAGE"
                 ></textarea>
               </label>
               <input
-                class="modal-form-check visually-hidden"
-                id="user-policy"
+                class="booking-form-check visually-hidden"
+                id="user-policy-booking"
                 name="user_policy"
                 type="checkbox"
               />
-              <label class="modal-form-check-desc" for="user-policy"
+              <label class="booking-form-check-desc" for="user-policy-booking"
                 >I accept the terms and conditions of the&nbsp;
-                <a class="modal-form-policy-link" href="">Privacy Policy</a>
+                <a class="booking-form-policy-link" href="">Privacy Policy</a>
               </label>
-              <button type="submit" class="modal-form-btn-submit">SEND</button>
+              <button type="submit" class="booking-form-btn-submit">
+                SEND
+              </button>
             </form>
           </div>
-  
+
           <div class="booking-address-wrapper">
             <h2 class="booking-title">Contacts</h2>
             <address class="booking-address">
@@ -508,11 +510,25 @@
       </section>
       <!-- /SECTION FOR ONLINE-BOOKING AND CONTACTS -->
     </main>
+
     <!-- FOOTER -->
-    <footer>
-      <p>&copy;</p>
+    <footer class="footer">
+      <div class="footer-container container">
+        <p class="footer-text">&copy; Copyright 2025</p>
+        <div class="footer-social-link-wrap">
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <a href="" class="footer-social-link link">Instagram</a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-social-link link">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-    <!-- FOOTER -->
+    <!-- /FOOTER -->
+
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -558,11 +574,11 @@
           </label>
           <input
             class="modal-form-check visually-hidden"
-            id="user-policy"
+            id="user-policy-modal"
             name="user_policy"
             type="checkbox"
           />
-          <label class="modal-form-check-desc" for="user-policy"
+          <label class="modal-form-check-desc" for="user-policy-modal"
             >I accept the terms and conditions of the&nbsp;
             <a class="modal-form-policy-link" href="">Privacy Policy</a>
           </label>
