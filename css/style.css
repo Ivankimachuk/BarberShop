@@ -41,7 +41,9 @@ button {
 }
 
 body {
-  font-family: Open Sans, sans-serif;
+  font-family:
+    Open Sans,
+    sans-serif;
 }
 
 .section {
@@ -257,10 +259,8 @@ body {
   padding-bottom: 208px;
   padding-left: 100px;
   flex-grow: 1;
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
+  background-image:
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../images/hero/bg.jpg);
   background-size: cover;
   background-color: #303030;
@@ -336,7 +336,9 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background: transparent;
-  transition: background-color 250ms linear, color 250ms linear;
+  transition:
+    background-color 250ms linear,
+    color 250ms linear;
 }
 .about-btn:hover,
 .about-btn:focus {
@@ -347,7 +349,8 @@ body {
 
 /*================== SECTION FOR SERVICES AND PRICES  ==================*/
 .prices {
-  background-image: url(../images/services/services.jpg),
+  background-image:
+    url(../images/services/services.jpg),
     linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
   background-size: cover;
   background-color: #303030;
@@ -644,10 +647,8 @@ body {
 /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 .booking {
   background-color: var(--purple-color-for-the-booking-section);
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.8),
-      rgba(25, 28, 38, 0.8)
-    ),
+  background-image:
+    linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
     url(../images/address-bg/addr-bg.jpeg);
   background-size: 50% 100%;
   background-position: right;
@@ -700,7 +701,9 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear, color 250ms linear;
+  transition:
+    border-color 250ms linear,
+    color 250ms linear;
 }
 .booking-form-input:focus::placeholder {
   color: var(--white-color);
@@ -728,7 +731,9 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear, color 250ms linear;
+  transition:
+    border-color 250ms linear,
+    color 250ms linear;
 }
 .booking-form-message::placeholder {
   color: var(--dark-theme-color);
@@ -806,10 +811,6 @@ body {
 .booking-address-wrapper {
   padding-left: 105px;
 }
-
-.booking-item {
-  margin-bottom: 20px;
-}
 .booking-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -824,6 +825,21 @@ body {
   margin-bottom: 70px;
 }
 
+.booking-item {
+  display: flex;
+  align-items: center;
+}
+.booking-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.booking-icon {
+  margin-right: 16px;
+}
+.booking-item:first-child .booking-icon {
+  align-self: start;
+  margin-top: 5px;
+}
 .booking-link {
   font-weight: 700;
   font-size: 18px;
@@ -831,7 +847,6 @@ body {
   letter-spacing: 2%;
   color: var(--dark-theme-color);
   font-style: normal;
-  margin-bottom: 20px;
   transition: color 250ms linear;
 }
 .booking-link:hover,
@@ -921,7 +936,7 @@ body {
   transition: color 250ms linear;
 }
 .footer-social-link:hover,
-.footer-social-link:focus{
+.footer-social-link:focus {
   color: var(--accent-color);
 }
 
@@ -936,7 +951,9 @@ body {
   height: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition:
+    opacity 250ms linear,
+    visibility 250ms linear;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1020,7 +1037,9 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear, color 250ms linear;
+  transition:
+    border-color 250ms linear,
+    color 250ms linear;
 }
 .modal-form-input:focus::placeholder {
   color: var(--white-color);
@@ -1048,7 +1067,9 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
-  transition: border-color 250ms linear, color 250ms linear;
+  transition:
+    border-color 250ms linear,
+    color 250ms linear;
 }
 .modal-form-message::placeholder {
   color: var(--dark-theme-color);
