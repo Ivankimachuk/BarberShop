@@ -1,0 +1,42 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .barbers-card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  .gallery-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  .prices-table-box {
+    gap: 30px;
+    background: none;
+  }
+  .prices-table-left {
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .prices-table-right {
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+  .prices-table-right:last-child {
+    padding-top: 30px;
+  }
+
+  .prices-table-text {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}

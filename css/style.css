@@ -47,17 +47,18 @@ body {
 }
 
 .section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -210,17 +211,16 @@ body {
 
 /*================== SECTION FOR HERO ==================*/
 
-.hero {
-}
-
 .hero-container {
   display: flex;
 }
+
 .hero-left-side {
   width: 100px;
   display: flex;
   align-items: flex-end;
 }
+
 .hero-social-list {
   display: flex;
   gap: 40px;
@@ -239,8 +239,6 @@ body {
   content: '';
 }
 
-.hero-social-item {
-}
 .hero-social-link {
   font-weight: 600;
   font-size: 11px;
@@ -295,10 +293,12 @@ body {
   max-width: 470px;
   width: 100%;
 }
+
 .about-list {
   display: flex;
   gap: 30px;
 }
+
 .about-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -308,6 +308,7 @@ body {
   margin-bottom: 20px;
   color: var(--light-theme-color);
 }
+
 .about-text {
   font-weight: 400;
   font-size: 18px;
@@ -316,6 +317,7 @@ body {
   margin-bottom: 20px;
   color: var(--text-description-color);
 }
+
 .about-description {
   font-weight: 400;
   font-size: 14px;
@@ -324,6 +326,7 @@ body {
   margin-bottom: 42px;
   color: var(--text-description-color);
 }
+
 .about-btn {
   font-weight: 600;
   font-size: 12px;
@@ -356,16 +359,6 @@ body {
   background-color: #303030;
 }
 
-.section {
-}
-.container {
-}
-.prices-description {
-}
-.suptitle {
-}
-.suptitle-theme-dark {
-}
 .prices-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -378,21 +371,25 @@ body {
 
 .prices-table-box {
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
+  flex-wrap: wrap;
 
-.prices-table-left {
-  padding: 30px 20px;
-  width: 570px;
+  margin-bottom: 40px;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
+.prices-table-left {
+  padding: 30px 40px;
+  flex-grow: 1;
+  width: 100%;
+}
+
 .prices-table-right {
-  padding: 30px 20px;
-  width: 570px;
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  padding: 30px 40px;
+  width: 100%;
+  flex-grow: 1;
+}
+.prices-table-right:last-child {
+  padding-top: 0;
 }
 
 .prices-table-line {
@@ -413,8 +410,8 @@ body {
 
 .prices-table-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.66;
+  font-size: 14px;
+  line-height: 1.42;
   letter-spacing: 2%;
   color: var(--dark-theme-color);
 }
@@ -450,8 +447,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.choose-us-container {
-}
+
 .choose-us-list {
   display: flex;
   flex-wrap: wrap;
@@ -498,17 +494,13 @@ body {
   text-align: center;
   color: var(--light-theme-color);
 }
+
 .choose-us-text-container {
   max-width: 500px;
   margin-top: 9px;
   margin-left: 130px;
 }
-.choose-us-text {
-}
-.suptitle {
-}
-.suptitle-theme-light {
-}
+
 .choose-us-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -550,7 +542,7 @@ body {
 }
 
 .barbers-card {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
 }
 
 .barbers-info-container {
@@ -612,6 +604,12 @@ body {
   overflow: hidden;
 }
 
+.barbers-overlay-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .overlay {
   position: absolute;
   left: 0;
@@ -637,10 +635,16 @@ body {
 /*================== GALLERY  ==================*/
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
+
 .gallery-item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
 }
 /*================== /GALLERY  ==================*/
 
@@ -660,7 +664,7 @@ body {
 .booking-container {
   display: flex;
 }
-/* BOOKING FORM */
+/*----- BOOKING FORM -----*/
 .booking-form-wrapper {
   padding-right: 25px;
   width: 50%;
@@ -685,10 +689,12 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+
 .booking-form-label-wrap {
   width: 100%;
   margin-bottom: 44px;
 }
+
 .booking-form-input {
   width: 100%;
   height: 24px;
@@ -785,6 +791,7 @@ body {
   letter-spacing: 2%;
   color: var(--accent-color);
 }
+
 .booking-form-btn-submit {
   display: block;
   margin-right: auto;
@@ -805,12 +812,13 @@ body {
 .booking-form-btn-submit:focus {
   background-color: var(--accent-color);
 }
-/* /BOOKING FORM */
+/*----- /BOOKING FORM ------*/
 
-/* BOOKING ADDRESS */
+/*----- BOOKING ADDRESS ------*/
 .booking-address-wrapper {
   padding-left: 105px;
 }
+
 .booking-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -838,6 +846,7 @@ body {
   stroke: var(--dark-theme-color);
   transition: stroke 250ms linear;
 }
+
 .booking-item:first-child .booking-icon {
   align-self: start;
   margin-top: 5px;
@@ -852,7 +861,6 @@ body {
   font-style: normal;
   transition: color 250ms linear;
 }
-
 
 .booking-tel {
   font-weight: 400;
@@ -873,11 +881,14 @@ body {
   font-style: normal;
   transition: color 250ms linear;
 }
-
 .booking-item:hover .booking-icon,
+.booking-item:focus-within .booking-icon,
 .booking-item:hover .booking-link,
+.booking-item:focus-within .booking-link,
 .booking-item:hover .booking-tel,
-.booking-item:hover .booking-mail {
+.booking-item:focus-within .booking-tel,
+.booking-item:hover .booking-mail,
+.booking-item:focus-within .booking-mail {
   stroke: var(--accent-color);
   color: var(--accent-color);
 }
@@ -889,7 +900,7 @@ body {
   letter-spacing: 2%;
   color: var(--dark-theme-color);
 }
-/* /BOOKING ADDRESS */
+/*----- /BOOKING ADDRESS -----*/
 /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 
 /*================== SECTION FOOTER  ==================*/
@@ -912,21 +923,19 @@ body {
   color: var(--dark-theme-color);
 }
 
-
-
 .footer-list {
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
 }
-
 .footer-list::before {
   content: '';
   width: 60px;
   height: 1px;
   background-color: var(--light-theme-color);
 }
+
 .footer-social-link {
   font-weight: 600;
   font-size: 11px;
@@ -960,6 +969,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -970,6 +980,7 @@ body {
   background-color: var(--purple-color-for-the-booking-section);
   padding: 40px;
 }
+
 .modal-close-btn {
   position: absolute;
   top: 10px;
@@ -1011,6 +1022,7 @@ body {
   color: var(--white-color);
   margin-bottom: 44px;
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1021,10 +1033,12 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
+
 .modal-form-label-wrap {
   width: 100%;
   margin-bottom: 44px;
 }
+
 .modal-form-input {
   width: 100%;
   height: 24px;
@@ -1121,6 +1135,7 @@ body {
   letter-spacing: 2%;
   color: var(--accent-color);
 }
+
 .modal-form-btn-submit {
   display: block;
   margin-right: auto;
@@ -1142,4 +1157,3 @@ body {
   background-color: var(--accent-color);
 }
 /*================== /MODAL FORM  ==================*/
-
