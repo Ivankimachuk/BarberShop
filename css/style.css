@@ -213,49 +213,19 @@ body {
 
 .hero-container {
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero-left-side {
-  width: 100px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.hero-social-list {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  transform-origin: bottom left;
-  transform: rotate(-90deg) translateY(100%);
-  padding-top: 27px;
-  padding-left: 40px;
-}
-.hero-social-list::before {
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: var(--light-theme-color);
-  content: '';
-}
-
-.hero-social-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--light-theme-color);
-  transition: color 250ms linear;
-}
-.hero-social-link:hover,
-.hero-social-link:focus {
-  color: var(--accent-color);
-}
+   display: none;
+  }
 
 .hero-right-side {
-  padding-top: 272px;
+  
+  /* padding-top: 272px;
   padding-bottom: 208px;
-  padding-left: 100px;
+  padding-left: 100px; */
   flex-grow: 1;
   background-image:
     linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
@@ -372,7 +342,6 @@ body {
 .prices-table-box {
   display: flex;
   flex-wrap: wrap;
-
   margin-bottom: 40px;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
@@ -382,7 +351,9 @@ body {
   flex-grow: 1;
   width: 100%;
 }
-
+.prices-table-left:first-child {
+  padding-bottom: 15px;
+}
 .prices-table-right {
   padding: 30px 40px;
   width: 100%;
