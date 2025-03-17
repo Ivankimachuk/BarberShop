@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link rel="icon" href="./images/logotype.png" type="image/png">
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
@@ -74,7 +75,7 @@
               A hair salon for men in Kyiv
             </p>
             <h1 class="main-title">BarberShop</h1>
-            <p class="hero-text section-description">
+            <p class="hero-text">
               We are experts in trendy men’s haircuts.
               <br />
               We work quickly, carefully and with style.
@@ -219,7 +220,7 @@
       <!-- /SECTION WHY PEOPLE COME TO US -->
 
       <!-- SECTION FOR OUR BARBERS -->
-      <section class="berbers-section section ">
+      <section class="berbers-section section">
         <div class="container cont">
           <p class="suptitle suptitle-theme-light">
             For true enjoyers of the atmosphere
@@ -229,6 +230,10 @@
             <li class="barbers-card">
               <div class="barbers-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/barbers/john-smith.jpg    1x,
+                    ./images/barbers/john-smith-2x.jpg 2x
+                  "
                   src="./images/barbers/john-smith.jpg"
                   alt="the master cuts the client's hair"
                   width="370"
@@ -281,6 +286,10 @@
             <li class="barbers-card">
               <div class="barbers-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/barbers/michele-doe.jpg    1x,
+                    ./images/barbers/michele-doe-2x.jpg 2x
+                  "
                   src="./images/barbers/michele-doe.jpg"
                   alt="the master cuts the client's hair"
                   width="370"
@@ -334,6 +343,10 @@
             <li class="barbers-card">
               <div class="barbers-overlay-wrapper">
                 <img
+                  srcset="
+                    ./images/barbers/alan-black.jpg    1x,
+                    ./images/barbers/alan-black-2x.jpg 2x
+                  "
                   src="./images/barbers/alan-black.jpg"
                   alt="the master cuts the client's hair"
                   width="370"
@@ -344,9 +357,10 @@
                   <br />
                   Alan is a master with extensive experience in the field of
                   barbering. His signature style is precision in detail and
-                  impeccable technique. He specializes in classic British haircuts
-                  and traditional shaving with a safety razor. Alan always cares
-                  about the comfort of his clients and the perfect result.
+                  impeccable technique. He specializes in classic British
+                  haircuts and traditional shaving with a safety razor. Alan
+                  always cares about the comfort of his clients and the perfect
+                  result.
                 </p>
               </div>
               <div class="barbers-info-container">
@@ -397,36 +411,128 @@
         </p>
         <ul class="gallery-list list">
           <li class="gallery-item">
-            <img
-              src="/images/gallery/leveling.jpg"
-              alt="leveling"
-              width="270"
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/leveling-desk.jpg    1x,
+                  ./images/gallery/leveling-desk-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/leveling-tab.jpg    1x,
+                  ./images/gallery/leveling-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/leveling-mob.jpg    1x,
+                  ./images/gallery/leveling-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/images/gallery/leveling-desk.jpg"
+                alt="leveling"
+                width="270"
+                height="360"
+              />
+            </picture>
           </li>
           <li class="gallery-item">
-            <img
-              src="./images/gallery//beard.jpg"
-              alt="beard"
-              width="270"
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/beard-desk.jpg    1x,
+                  ./images/gallery/beard-desk-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/beard-tab.jpg    1x,
+                  ./images/gallery/beard-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/beard-mob.jpg    1x,
+                  ./images/gallery/beard-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/images/gallery/beard-desk.jpg"
+                alt="leveling"
+                width="270"
+                height="360"
+              />
+            </picture>
           </li>
           <li class="gallery-item">
-            <img
-              src="./images/gallery//barber.jpg"
-              alt="barber"
-              width="270"
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/procedure-desk.jpg    1x,
+                  ./images/gallery/procedure-desk-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/procedure-tab.jpg    1x,
+                  ./images/gallery/procedure-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/procedure-mob.jpg    1x,
+                  ./images/gallery/procedure-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/gallery/procedure-desk.jpg"
+                alt="barber"
+                width="270"
+                height="360"
+              />
+            </picture>
           </li>
           <li class="gallery-item">
-            <img
-              src="./images/gallery//hairstyles.jpg"
-              alt="hairstyles"
-              width="270"
-              height="360"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery/hairstyles-desk.jpg    1x,
+                  ./images/gallery/hairstyles-desk-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/hairstyles-tab.jpg    1x,
+                  ./images/gallery/hairstyles-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery/hairstyles-mob.jpg    1x,
+                  ./images/gallery/hairstyles-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/gallery//hairstyles-desk.jpg"
+                alt="hairstyles"
+                width="270"
+                height="360"
+              />
+            </picture>
           </li>
         </ul>
       </section>

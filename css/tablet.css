@@ -7,10 +7,35 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  /*================== HEADER ==================*/
 
+  /*================== /HEADER ==================*/
+
+  /*================== SECTION FOR HERO ==================*/
   .hero-container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .hero-right-side {
+    padding: 272px 0 237px 98px;
+    background-image:
+      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url(../images/hero/bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image:
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../images/hero/bg-tab-2x.jpg);
+  }
+}
+
+  .hero-text {
+    font-size: 18px;
+    line-height: 1.67;
   }
 
   .hero-left-side {
@@ -49,24 +74,37 @@
   .hero-social-link:focus {
     color: var(--accent-color);
   }
+  /*================== /SECTION FOR HERO ==================*/
 
+   /*================== SECTION FOR SERVICES AND PRICES  ==================*/
+  .prices {
+    background-image:
+      linear-gradient(rgba(17, 19, 25, 0.2), rgba(17, 19, 25, 0.2)),
+      url(../images/services/services-tab.jpg);
+}
+   /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
+
+  /*================== SECTION FOR OUR BARBERS ==================*/
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .berbers-section > .container {
+      max-width: 450px;
+    }
+
+    .prices-table-text {
+      font-size: 18px;
+      line-height: 1.66;
+    }
+
+    .prices-table-left,
+    .prices-table-right {
+      padding: 32px 40px;
+    }
+  }
+  /*================== /SECTION FOR OUR BARBERS ==================*/
+
+  /*================== GALLERY  ==================*/
   .gallery-item {
     flex-basis: calc((100% - 30px) / 2);
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .berbers-section > .container {
-    max-width: 450px;
-  }
-
-  .prices-table-text {
-    font-size: 18px;
-    line-height: 1.66;
-  }
-
-  .prices-table-left,
-  .prices-table-right {
-    padding: 32px 40px;
-  }
+  /*================== /GALLERY  ==================*/
 }
