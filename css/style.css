@@ -117,7 +117,8 @@ body {
 
 /*================== HEADER ==================*/
 
-.page-header {
+
+/* .page-header {
   padding-top: 32px;
   padding-bottom: 32px;
   position: absolute;
@@ -199,7 +200,7 @@ body {
 .btn-button:hover,
 .btn-button:focus {
   background-color: var(--accent-color);
-}
+} */
 /*================== /HEADER ==================*/
 
 /*================== SECTION FOR HERO ==================*/
