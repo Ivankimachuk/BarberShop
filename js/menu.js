@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.classList.toggle('active');
     menu.classList.toggle('active');
     backdrop.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
   }
 
 
