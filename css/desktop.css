@@ -9,7 +9,13 @@
   }
 
   /*================== HEADER ==================*/
-
+  .menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+/* .phone-number-wrapper{
+  margin-left: auto;
+  margin-right: 17px;
+} */
   /*================== /HEADER ==================*/
 
   /*================== SECTION FOR HERO ==================*/
@@ -22,6 +28,7 @@
     font-weight: 700;
     font-size: 72px;
     line-height: 1.16;
+    letter-spacing: 3.6px;
   }
 
   .hero-right-side {

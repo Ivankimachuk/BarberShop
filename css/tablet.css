@@ -10,8 +10,98 @@
   .burger {
     display: none;
   }
+  .mobile-menu-wrap {
+    display: none;
+  }
   /*================== HEADER ==================*/
+  .page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 71px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    transition: color 250ms linear;
+    position: relative;
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--accent-color);
+  }
+  .menu-link.active {
+    color: var(--accent-color);
+  }
+
+  .phone-number-wrapper {
+    margin-left: auto;
+  }
+
+  .phone-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 1.8px;
+    margin-right: 43px;
+    color: var(--white-color);
+    transition: color 250ms linear;
+    margin-left: auto;
+  }
+  .phone-number:hover,
+  .phone-number:focus {
+    color: var(--accent-color);
+  }
+
+  .btn-button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 1.08px;
+    padding: 11px 20px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 32px;
+    color: var(--white-color);
+    transition: background-color 250ms linear;
+  }
+  .btn-button:hover,
+  .btn-button:focus {
+    background-color: var(--accent-color);
+  }
   /*================== /HEADER ==================*/
 
   /*================== SECTION FOR HERO ==================*/
@@ -27,14 +117,14 @@
       url(../images/hero/bg-tab.jpg);
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-right-side {
-    background-image:
-    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url(../images/hero/bg-tab-2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-right-side {
+      background-image:
+        linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../images/hero/bg-tab-2x.jpg);
+    }
   }
-}
 
   .hero-text {
     font-size: 18px;
@@ -79,13 +169,13 @@
   }
   /*================== /SECTION FOR HERO ==================*/
 
-   /*================== SECTION FOR SERVICES AND PRICES  ==================*/
+  /*================== SECTION FOR SERVICES AND PRICES  ==================*/
   .prices {
     background-image:
       linear-gradient(rgba(17, 19, 25, 0.2), rgba(17, 19, 25, 0.2)),
       url(../images/services/services-tab.jpg);
-}
-   /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
+  }
+  /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
 
   /*================== SECTION FOR OUR BARBERS ==================*/
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -101,6 +191,14 @@
     .prices-table-left,
     .prices-table-right {
       padding: 32px 40px;
+    }
+
+    .phone-number {
+      order: 1;
+    }
+    .btn-button {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   /*================== /SECTION FOR OUR BARBERS ==================*/

@@ -68,6 +68,7 @@
     height: 100%;
     background: #fff;
     transition: right 0.3s ease-in-out;
+    overflow-y: auto;
   }
 
   .mobile-menu.active {
@@ -84,14 +85,12 @@
   .mobile-menu-wrap {
     display: flex;
     flex-direction: column;
-    padding: 118px 0 227px 40px;
+    padding: 118px 0 0px 40px;
   }
   .mobile-menu-list {
     margin-bottom: 64px;
   }
 
-  .mobile-menu-item {
-  }
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -99,7 +98,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
     color: #303030;
     transition: color 250ms linear;
   }
@@ -115,7 +114,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 10%;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
     color: #303030;
     margin-bottom: 20px;
@@ -124,11 +123,11 @@
   .mobile-phone-number:focus {
     color: var(--accent-color);
   }
-  .mobile-btn-button {
+  .mobile-button {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
-    letter-spacing: 9%;
+    letter-spacing: 1.08px;
     text-transform: uppercase;
     padding: 12px 40px;
     border: 1px solid #ff6c00;
@@ -139,13 +138,24 @@
     margin-bottom: 70px;
     transition: background-color 250ms linear;
   }
-  .mobile-btn-button:hover,
-  .mobile-btn-button:focus {
+  .mobile-button:hover,
+  .mobile-button:focus {
     background-color: var(--accent-color);
   }
-  .mobile-social-list {
+  .mobile-social-wrapper {
+    display: flex;
   }
-  .mobile-social-item {
+  .mobile-social-wrapper::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--light-theme-color);
+    content: '';
+    margin-top: 10px;
+    margin-right: 40px;
+  }
+  .mobile-social-item:not(:last-child) {
+    margin-bottom: 34px;
   }
   .mobile-social-link {
     font-weight: 600;
@@ -153,6 +163,10 @@
     line-height: 100%;
     letter-spacing: 0.2em;
     color: #303030;
+  }
+  .mobile-social-link:hover,
+  .mobile-social-link:focus {
+    color: var(--accent-color);
   }
   /* /MOBILE-MENU-LIST */
 

@@ -239,7 +239,7 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.16;
-  letter-spacing: 5%;
+  letter-spacing: 2.4px;
   color: var(--white-color);
   padding-bottom: 20px;
 }
@@ -248,7 +248,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 2%;
+  letter-spacing: 0.36px;
   color: var(--dark-theme-color);
   max-width: 360px;
 }
