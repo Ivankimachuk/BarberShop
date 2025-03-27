@@ -261,7 +261,7 @@ body {
 }
 
 .about-left-images {
-  margin-right: 30px;
+  display: none;
 }
 
 .about-right-text {
@@ -269,17 +269,14 @@ body {
   width: 100%;
 }
 
-.about-list {
-  display: flex;
-  gap: 30px;
-}
+
 
 .about-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  letter-spacing: 5%;
+  letter-spacing: 2.1px;
   margin-bottom: 20px;
   color: var(--light-theme-color);
 }

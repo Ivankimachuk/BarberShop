@@ -169,6 +169,23 @@
   }
   /*================== /SECTION FOR HERO ==================*/
 
+  /*================== SECTION FOR ABOUT US ==================*/
+  .about-left-images {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+  /*================== /SECTION FOR ABOUT US ==================*/
+
   /*================== SECTION FOR SERVICES AND PRICES  ==================*/
   .prices {
     background-image:
