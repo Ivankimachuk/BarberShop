@@ -117,7 +117,6 @@ body {
 
 /*================== HEADER ==================*/
 
-
 /* .page-header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -265,16 +264,17 @@ body {
 }
 
 .about-right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 470px;
   width: 100%;
 }
 
-
-
 .about-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 2.1px;
   margin-bottom: 20px;
@@ -283,9 +283,9 @@ body {
 
 .about-text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.16;
-  letter-spacing: 2%;
+  letter-spacing: 0.36px;
   margin-bottom: 20px;
   color: var(--text-description-color);
 }
@@ -294,16 +294,17 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
   margin-bottom: 42px;
   color: var(--text-description-color);
 }
 
 .about-btn {
+  margin-right: auto;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 9%;
+  letter-spacing: 1.08px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 11px 20px;
@@ -398,7 +399,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 9%;
+  letter-spacing: 1.08px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 11px 20px;
@@ -417,10 +418,12 @@ body {
 
 /*================== SECTION WHY PEOPLE COME TO US  ==================*/
 .choose-us {
-  display: flex;
-  justify-content: center;
+ display: flex;
+ flex-direction: column;
 }
-
+ .choose-us-container{
+  margin: auto;
+ }
 .choose-us-list {
   display: flex;
   flex-wrap: wrap;
@@ -444,7 +447,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.27;
-  letter-spacing: 5%;
+  letter-spacing: 2.1px;
   text-align: center;
   color: var(--light-theme-color);
 }
@@ -470,8 +473,8 @@ body {
 
 .choose-us-text-container {
   max-width: 500px;
-  margin-top: 9px;
-  margin-left: 130px;
+  order: -1;
+  margin-bottom: 44px;
 }
 
 .choose-us-title {
@@ -479,7 +482,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  letter-spacing: 5%;
+  letter-spacing: 2.1px;
   margin-bottom: 20px;
   color: var(--light-theme-color);
 }
@@ -488,7 +491,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  letter-spacing: 2%;
+  letter-spacing: 0.36px;
   color: var(--text-description-color);
 }
 /*================== /SECTION WHY PEOPLE COME TO US  ==================*/
@@ -526,7 +529,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: 2%;
+  letter-spacing: 0.36px;
   text-align: center;
   color: var(--light-theme-color);
   margin-bottom: 8px;
@@ -536,7 +539,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
   text-align: center;
   color: var(--accent-color);
   margin-bottom: 30px;

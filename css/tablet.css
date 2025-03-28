@@ -180,10 +180,21 @@
     gap: 30px;
     flex-wrap: wrap;
   }
+
   .about-img {
     width: 100%;
     height: auto;
   }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .choose-us-container {
+    margin: 0;
+    margin-left: auto;
+  }
+
   /*================== /SECTION FOR ABOUT US ==================*/
 
   /*================== SECTION FOR SERVICES AND PRICES  ==================*/
@@ -225,4 +236,8 @@
     flex-basis: calc((100% - 30px) / 2);
   }
   /*================== /GALLERY  ==================*/
+
+  /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+
+  /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }

@@ -10,12 +10,8 @@
 
   /*================== HEADER ==================*/
   .menu-item:not(:last-child) {
-  margin-right: 40px;
-}
-/* .phone-number-wrapper{
-  margin-left: auto;
-  margin-right: 17px;
-} */
+    margin-right: 40px;
+  }
   /*================== /HEADER ==================*/
 
   /*================== SECTION FOR HERO ==================*/
@@ -41,24 +37,32 @@
     (min-resolution: 2dppx) {
     .hero-right-side {
       background-image:
-      linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(../images/hero/bg-2x.jpg);
+        linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../images/hero/bg-2x.jpg);
     }
   }
   /*================== /SECTION FOR HERO ==================*/
 
+  /*================== SECTION FOR ABOUT US ==================*/
+
+  .about-title {
+    font-size: 42px;
+  }
+
+  /*================== /SECTION FOR ABOUT US ==================*/
+
   /*================== SECTION FOR SERVICES AND PRICES  ==================*/
   .prices {
     background-image:
-    linear-gradient(rgba(17, 19, 25, 0.2), rgba(17, 19, 25, 0.2)),
+      linear-gradient(rgba(17, 19, 25, 0.2), rgba(17, 19, 25, 0.2)),
       url(../images/services/services-desk.jpg);
   }
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .prices {
       background-image:
-      url(../images/services/services-desk-2x.jpg),
+        url(../images/services/services-desk-2x.jpg),
         linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
     }
   }
@@ -88,6 +92,27 @@
   }
   /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
 
+  /*================== SECTION WHY PEOPLE COME TO US  ==================*/
+
+.choose-us {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+ .choose-us-container{
+  margin-left: 0;
+ }
+
+.choose-us-text-container {
+  max-width: 500px;
+  margin-top: 9px;
+  margin-left: 130px;
+  order: 0;
+}
+
+  /*================== /SECTION WHY PEOPLE COME TO US  ==================*/
+
   /*================== SECTION FOR OUR BARBERS ==================*/
   .barbers-card {
     flex-basis: calc((100% - 60px) / 3);
@@ -99,4 +124,8 @@
     flex-basis: calc((100% - 90px) / 4);
   }
   /*================== /GALLERY  ==================*/
+
+  /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+
+  /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }
