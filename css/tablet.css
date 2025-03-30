@@ -238,6 +238,13 @@
   /*================== /GALLERY  ==================*/
 
   /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+.booking-form-title {
+ text-align: left;
+}
 
+.booking-form-input-wrapper {
+  flex-direction: row;
+  gap: 30px;
+}
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }

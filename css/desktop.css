@@ -126,6 +126,27 @@
   /*================== /GALLERY  ==================*/
 
   /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+.booking {
+  background-color: var(--purple-color-for-the-booking-section);
+  background-image:
+    linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+    url(../images/address-bg/addr-bg.jpeg);
+  background-size: 50% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 111px;
+}
 
+.booking-container {
+  flex-direction: row;
+}
+
+/*----- BOOKING FORM -----*/
+.booking-form-wrapper {
+  padding-right: 25px;
+  width: 50%;
+  padding-bottom: 0;
+}
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }

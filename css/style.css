@@ -629,21 +629,31 @@ body {
   background-color: var(--purple-color-for-the-booking-section);
   background-image:
     linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-    url(../images/address-bg/addr-bg.jpeg);
-  background-size: 50% 100%;
-  background-position: right;
+    url(../images/address-bg/address-mob.jpg);
+    background-size: 100% 50%;
+    background-position: bottom;
   background-repeat: no-repeat;
-  padding-top: 130px;
+  padding-top: 84px;
   padding-bottom: 111px;
 }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .booking {
+      background-image:
+        url(../images/address-bg/address-mob-2x.jpg),
+        linear-gradient(rgba(17, 19, 25, 1), rgba(17, 19, 25, 1));
+    }
+  }
 
 .booking-container {
   display: flex;
+  flex-direction: column;
 }
+
 /*----- BOOKING FORM -----*/
 .booking-form-wrapper {
-  padding-right: 25px;
-  width: 50%;
+ padding-bottom: 84px;
 }
 
 .booking-form-title {
@@ -651,10 +661,12 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  letter-spacing: 5%;
+  letter-spacing: 3px;
   color: var(--white-color);
   margin-bottom: 44px;
+ text-align: center;
 }
+
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -663,12 +675,13 @@ body {
 .booking-form-input-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 44px;
 }
 
 .booking-form-label-wrap {
   width: 100%;
-  margin-bottom: 44px;
 }
 
 .booking-form-input {
@@ -713,6 +726,7 @@ body {
   font-size: 11px;
   line-height: 1.27;
   letter-spacing: 10%;
+  margin-bottom: 10px;
   transition:
     border-color 250ms linear,
     color 250ms linear;
@@ -770,7 +784,7 @@ body {
 
 .booking-form-btn-submit {
   display: block;
-  margin-right: auto;
+  margin: auto;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
