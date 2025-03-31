@@ -251,5 +251,9 @@
   margin: 0;
   margin-right: auto;
 }
+
+.booking-title {
+  text-align: left;
+}
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }

@@ -148,5 +148,16 @@
   width: 50%;
   padding-bottom: 0;
 }
+/*----- /BOOKING FORM ------*/
+
+/*----- BOOKING ADDRESS ------*/
+.booking-address-wrapper {
+  padding-left: 105px;
+}
+
+.booking-address {
+  margin-bottom: 70px;
+}
+/*----- /BOOKING ADDRESS ------*/
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }
