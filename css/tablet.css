@@ -238,22 +238,65 @@
   /*================== /GALLERY  ==================*/
 
   /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
-.booking-form-title {
- text-align: left;
-}
+  .booking {
+    background-image:
+      linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+      url(../images/address-bg/address-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .booking {
+      background-image:
+        linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+        url(../images/address-bg/address-tab-2x.jpg);
+    }
+  }
 
-.booking-form-input-wrapper {
-  flex-direction: row;
-  gap: 30px;
-}
+  .booking-form-title {
+    text-align: left;
+  }
 
-.booking-form-btn-submit {
-  margin: 0;
-  margin-right: auto;
-}
+  .booking-form-input-wrapper {
+    flex-direction: row;
+    gap: 30px;
+  }
 
-.booking-title {
-  text-align: left;
-}
+  .booking-form-btn-submit {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .booking-address-wrapper {
+    display: flex;
+  }
+
+  .booking-time-wrap {
+    margin-left: 130px;
+    margin-top: 90px;
+  }
+  .booking-title {
+    text-align: left;
+  }
+
+  .booking-link {
+    max-width: 200px;
+  }
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
+
+  /*================== SECTION FOOTER  ==================*/
+
+  .footer-container {
+    flex-direction: row;
+  }
+
+  /*================== /SECTION FOOTER  ==================*/
+
+  /*================== BTN BACK TOP  ==================*/
+  .back-to-top {
+    
+    padding: 10px 12px;
+  }
+
+  /*================== /BTN BACK TOP  ==================*/
 }

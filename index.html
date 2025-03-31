@@ -40,13 +40,13 @@
               <a class="menu-link link active" href="#">About</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Services and prices</a>
+              <a class="menu-link link" href="#service">Services and prices</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Barbers</a>
+              <a class="menu-link link" href="#barbers">Barbers</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="#">Contacts</a>
+              <a class="menu-link link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -209,7 +209,7 @@
       <!------------ /SECTION FOR ABOUT US ------------>
 
       <!------------ SECTION FOR SERVICES AND PRICES  ------------>
-      <section class="prices section">
+      <section id="service" class="prices section">
         <div class="container">
           <p class="prices-description suptitle suptitle-theme-dark">
             Spend your time with the best masters
@@ -298,7 +298,7 @@
       <!------------ /SECTION WHY PEOPLE COME TO US ------------>
 
       <!------------ SECTION FOR OUR BARBERS ------------>
-      <section class="berbers-section section">
+      <section id="barbers" class="berbers-section section">
         <div class="container cont">
           <p class="suptitle suptitle-theme-light">
             For true enjoyers of the atmosphere
@@ -617,7 +617,7 @@
       <!------------ /GALLERY ------------>
 
       <!------------ SECTION FOR ONLINE-BOOKING AND CONTACTS ------------>
-      <section class="booking">
+      <section id="contacts" class="booking">
         <div class="booking-container container">
           <div class="booking-form-wrapper">
             <h2 class="booking-form-title">Online-booking</h2>
@@ -673,44 +673,46 @@
           </div>
 
           <div class="booking-address-wrapper">
-            <h2 class="booking-title">Contacts</h2>
-            <address class="booking-address">
-              <ul class="booking-info list">
-                <li class="booking-item">
-                  <svg class="booking-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-map-pin"></use>
-                  </svg>
-                  <a
-                    class="booking-link link"
-                    href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    st. Vasilkivska, 7A
-                    <br />
-                    Kyiv, 08132
-                  </a>
-                </li>
-                <li class="booking-item">
-                  <svg class="booking-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  <a class="booking-tel link" href="tel:+380441111111">
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="booking-item">
-                  <svg class="booking-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
-                  <a class="booking-mail" href="mailto:barbershop@email.com">
-                    barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
-            <p class="booking-time-text">Every day from 9:00 to 22:00</p>
+            <div>
+              <h2 class="booking-title">Contacts</h2>
+              <address class="booking-address">
+                <ul class="booking-info list">
+                  <li class="booking-item">
+                    <svg class="booking-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <a
+                      class="booking-link link"
+                      href="https://maps.app.goo.gl/Xi24mqiet4fB8Xg56"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      st. Vasilkivska, 7A Kyiv, 08132
+                    </a>
+                  </li>
+                  <li class="booking-item">
+                    <svg class="booking-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <a class="booking-tel link" href="tel:+380441111111">
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="booking-item">
+                    <svg class="booking-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    <a class="booking-mail" href="mailto:barbershop@email.com">
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="booking-time-wrap">
+              <h3 class="suptitle suptitle-theme-dark">Working hours</h3>
+              <p class="booking-time-text">Every day from 9:00 to 22:00</p>
+            </div>
           </div>
         </div>
       </section>
@@ -718,7 +720,7 @@
     </main>
 
     <!------------ FOOTER ------------>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <p class="footer-text">&copy; Copyright 2025</p>
         <div class="footer-social-link-wrap">
@@ -732,7 +734,7 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!------------ /FOOTER ------------>
 
     <!------------ MODAL WINDOW ------------>
@@ -794,6 +796,23 @@
       </div>
     </div>
     <!------------ /MODAL WINDOW ------------>
+
+    <!------------ BTN BACK TOP ------------>
+    <div id="back_to_top" class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        style="transform: rotate(270deg)"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      </svg>
+    </div>
+     <!------------ BTN BACK TOP ------------>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/btn-top.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

@@ -72,6 +72,11 @@ body {
   clip: rest(0 0 0 0);
   clip-path: inset(100%);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*================== COMPONENTS ==================*/
 
 .hero-social-link {
@@ -847,10 +852,11 @@ body {
 }
 
 .booking-link {
+  max-width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 2%;
+  letter-spacing: 0.36px;
   color: var(--dark-theme-color);
   font-style: normal;
   transition: color 250ms linear;
@@ -906,17 +912,22 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .footer-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 100%;
-  letter-spacing: 20%;
+  letter-spacing: 2.2px;
   color: var(--dark-theme-color);
+  margin-right: auto;
 }
 
+.footer-social-link-wrap {
+  margin-left: auto;
+}
 .footer-list {
   display: flex;
   gap: 40px;
@@ -934,7 +945,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 100%;
-  letter-spacing: 20%;
+  letter-spacing: 2.2px;
   color: var(--light-theme-color);
   transition: color 250ms linear;
 }
@@ -1151,3 +1162,30 @@ body {
   background-color: var(--accent-color);
 }
 /*================== /MODAL FORM  ==================*/
+
+/*================== BTN BACK TOP  ==================*/
+.back-to-top {
+  background: var(--gray-shade-elements);
+  border-radius: 50%;
+  position: fixed;
+  bottom: -50px;
+  padding: 5px 7px;
+  right: 50px;
+  cursor: pointer;
+  transition: 0.3s all;
+  z-index: 9999;
+}
+
+.back-to-top svg {
+  fill: var(--accent-color);
+}
+.back-to-top:hover {
+  transform: scale(1.2);
+  transition: transform 250ms linear;
+}
+
+.back-to-top.active {
+  bottom: 50px;
+  transition: 0.3s all;
+}
+/*================== /BTN BACK TOP  ==================*/

@@ -94,22 +94,22 @@
 
   /*================== SECTION WHY PEOPLE COME TO US  ==================*/
 
-.choose-us {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
+  .choose-us {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 
- .choose-us-container{
-  margin-left: 0;
- }
+  .choose-us-container {
+    margin-left: 0;
+  }
 
-.choose-us-text-container {
-  max-width: 500px;
-  margin-top: 9px;
-  margin-left: 130px;
-  order: 0;
-}
+  .choose-us-text-container {
+    max-width: 500px;
+    margin-top: 9px;
+    margin-left: 130px;
+    order: 0;
+  }
 
   /*================== /SECTION WHY PEOPLE COME TO US  ==================*/
 
@@ -126,38 +126,55 @@
   /*================== /GALLERY  ==================*/
 
   /*================== SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
-.booking {
-  background-color: var(--purple-color-for-the-booking-section);
-  background-image:
-    linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-    url(../images/address-bg/addr-bg.jpeg);
-  background-size: 50% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  padding-top: 130px;
-  padding-bottom: 111px;
-}
+  .booking {
+    background-image:
+      linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+      url(../images/address-bg/address-desk.jpg);
+    background-size: 50% 100%;
+    background-position: right;
+    padding-top: 130px;
+    padding-bottom: 111px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .booking {
+      background-image:
+        linear-gradient(rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+        url(../images/address-bg/address-desk-2x.jpg);
+    }
+  }
 
-.booking-container {
-  flex-direction: row;
-}
+  .booking-container {
+    flex-direction: row;
+  }
 
-/*----- BOOKING FORM -----*/
-.booking-form-wrapper {
-  padding-right: 25px;
-  width: 50%;
-  padding-bottom: 0;
-}
-/*----- /BOOKING FORM ------*/
+  /*----- BOOKING FORM -----*/
+  .booking-form-wrapper {
+    padding-right: 25px;
+    width: 50%;
+    padding-bottom: 0;
+  }
+  /*----- /BOOKING FORM ------*/
 
-/*----- BOOKING ADDRESS ------*/
-.booking-address-wrapper {
-  padding-left: 105px;
-}
+  /*----- BOOKING ADDRESS ------*/
+  .booking-address-wrapper {
+    padding-left: 105px;
+  }
 
-.booking-address {
-  margin-bottom: 70px;
-}
-/*----- /BOOKING ADDRESS ------*/
+  .booking-address {
+    margin-bottom: 70px;
+  }
+
+  .booking-address-wrapper {
+    display: block;
+  }
+
+  .booking-time-wrap {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  /*----- /BOOKING ADDRESS ------*/
+
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 }
