@@ -284,6 +284,16 @@
   }
   /*================== /SECTION FOR ONLINE-BOOKING AND CONTACTS  ==================*/
 
+  /*================== MODAL WINDOW  ==================*/
+  .modal-title {
+    text-align: left;
+  }
+  .modal-form-input-wrapper {
+    gap: 30px;
+    flex-direction: row;
+  }
+  /*================== /MODAL WINDOW  ==================*/
+
   /*================== SECTION FOOTER  ==================*/
 
   .footer-container {
@@ -294,7 +304,6 @@
 
   /*================== BTN BACK TOP  ==================*/
   .back-to-top {
-    
     padding: 10px 12px;
   }
 

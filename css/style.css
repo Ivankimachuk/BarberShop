@@ -52,13 +52,12 @@ body {
 }
 
 .container {
-  /* max-width: 1200px; */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -76,6 +75,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 
 /*================== COMPONENTS ==================*/
 
@@ -666,7 +669,7 @@ html {
 .booking-form-title {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 40px;
   line-height: 1.16;
   letter-spacing: 3px;
   color: var(--white-color);
@@ -813,9 +816,6 @@ html {
 /*----- /BOOKING FORM ------*/
 
 /*----- BOOKING ADDRESS ------*/
-.booking-address-wrapper {
-  /* padding-left: 105px; */
-}
 
 .booking-title {
   font-family: Raleway, sans-serif;
@@ -963,7 +963,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
   transition:
     opacity 250ms linear,
@@ -1015,17 +1015,16 @@ html {
   fill: var(--accent-color);
 }
 
-/*================== /MODAL WINDOW  ==================*/
-
-/*================== MODAL FORM  ==================*/
+/*----- MODAL FORM  -----*/
 .modal-title {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 38px;
   line-height: 1.16;
   letter-spacing: 5%;
   color: var(--white-color);
   margin-bottom: 44px;
+  text-align: center;
 }
 
 .modal-form {
@@ -1036,12 +1035,13 @@ html {
 .modal-form-input-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 44px;
 }
 
 .modal-form-label-wrap {
   width: 100%;
-  margin-bottom: 44px;
 }
 
 .modal-form-input {
@@ -1105,6 +1105,7 @@ html {
 
 .modal-form-check-desc {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
@@ -1161,7 +1162,9 @@ html {
 .modal-form-btn-submit:focus {
   background-color: var(--accent-color);
 }
-/*================== /MODAL FORM  ==================*/
+/*----- /MODAL FORM  -----*/
+
+/*================== /MODAL WINDOW  ==================*/
 
 /*================== BTN BACK TOP  ==================*/
 .back-to-top {
