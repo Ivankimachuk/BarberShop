@@ -829,6 +829,7 @@ html {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  gap: 30px;
 }
 
 .footer-text {
