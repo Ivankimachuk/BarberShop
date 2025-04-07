@@ -203,6 +203,10 @@
       linear-gradient(rgba(17, 19, 25, 0.2), rgba(17, 19, 25, 0.2)),
       url(../images/services/services-tab.jpg);
   }
+
+  .prices-title {
+  text-align: left;
+}
   /*================== /SECTION FOR SERVICES AND PRICES  ==================*/
 
   /*================== SECTION FOR OUR BARBERS ==================*/

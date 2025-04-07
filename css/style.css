@@ -123,92 +123,6 @@ html {
 
 /*================== /COMPONENTS ==================*/
 
-/*================== HEADER ==================*/
-
-/* .page-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.page-header-container {
-  display: flex;
-  align-items: center;
-}
-
-.page-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-right: 71px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.menu-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 10%;
-  color: var(--white-color);
-  transition: color 250ms linear;
-  position: relative;
-}
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-.menu-link.active {
-  color: var(--accent-color);
-}
-
-.phone-number {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 10%;
-  margin-left: auto;
-  margin-right: 43px;
-  color: var(--white-color);
-  transition: color 250ms linear;
-}
-.phone-number:hover,
-.phone-number:focus {
-  color: var(--accent-color);
-}
-
-.btn-button {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 9%;
-  padding: 11px 20px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  background: transparent;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-right: 17px;
-  color: var(--white-color);
-  transition: background-color 250ms linear;
-}
-.btn-button:hover,
-.btn-button:focus {
-  background-color: var(--accent-color);
-} */
-/*================== /HEADER ==================*/
 
 /*================== SECTION FOR HERO ==================*/
 
@@ -343,11 +257,12 @@ html {
 .prices-title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 37px;
   line-height: 1.16;
   letter-spacing: 5%;
   margin-bottom: 44px;
   color: var(--white-color);
+  text-align: center;
 }
 
 .prices-table-box {
