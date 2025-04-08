@@ -1104,7 +1104,7 @@ html {
 }
 
 .back-to-top.active {
-  bottom: 50px;
+  bottom: 100px;
   transition: 0.3s all;
 }
 /*================== /BTN BACK TOP  ==================*/
